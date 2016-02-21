@@ -37,7 +37,7 @@ ACTION_IF ENGINE_IS ~bg2ee~ BEGIN
       infer_charsets = 0
       STR_VAR
       tra_path = EVAL "%MOD_FOLDER%/tra"
-      iconv_path = "%MOD_FOLDER%/tools/iconv" //available as part of the base system on OS X and GNU/Linux
+      iconv_path = EVAL "%MOD_FOLDER%/tools/iconv" //available as part of the base system on OS X and GNU/Linux
       charset_table = charsetsTable
       reload_array = charsetsReloadArray
     END
