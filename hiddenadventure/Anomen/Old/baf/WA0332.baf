@@ -1,0 +1,19 @@
+IF
+	Global("WAMoirQ","Global",9)
+	Global("WAALWSpawn","Global",0)
+THEN
+	RESPONSE #100
+		SetGlobal("WAALWSpawn","Global",1)
+		CreateCreature("WAALW",[598.448],6)
+		Continue()
+END
+
+IF
+	GlobalTimerExpired("WAALWTime","GLOBAL")
+	Global("WAALWSpawn","Global",1)
+THEN
+	RESPONSE #100
+		SetGlobal("WAALWSpawn","Global",2)
+		CreateCreature("WAALW",[598.448],6)
+		Continue()
+END

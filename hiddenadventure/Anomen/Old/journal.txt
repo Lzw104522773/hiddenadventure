@@ -1,0 +1,62 @@
+@99999980 = ~Moiras Mörder auf der Spur
+
+Alle Spuren scheinen auf den Captain der Wache selbst hinzudeuten. Er scheint mit einer größeren Organisation in Verbindung zu stehen. Wer immer sie sein mögen, ich bezweifle, dass sie gute Absichten verfolgen. Unsere Nachforschungen ergaben, dass Alwesk auf jeden Fall an dem Mord an Moira Delryn beteiligt war, allerdings nicht in welcher Rolle. Es wird höchste Zeit, dass wir den guten Captain mit unseren neuesten Erkenntnissen konfrontieren. Mal sehen, was er zu sagen hat.~
+
+@99999981 = ~Moiras Mörder auf der Spur
+
+Es kam, wie vermutet: Alwesk hatte noch ein einen Trumpf in der Hand und einige Meuchelmörder zu seinem Schutz postiert. Letztendlich konnten wir diesen Wahnsinnigen und seine Schergen besiegen und fanden endlich den Namen des Mannes, der Alwesk angeheuert hatte und hinter dem ganzen Einbruch steckte:
+
+Kaum zu glauben, aber es ist tatsächlich der Kaufmann Saerk Farradh, der ewige Konkurrent von Anomens Vater! Obwohl er den Mord nicht direkt befohlen hat, ist er dennoch der Initiator der ganzen Geschichte.
+
+Als Ritter hatte Anomen begriffen, dass er nicht selbst Rache an Saerk üben kann – wie er es dem mysteriösen Informanten schwören musste, um Hilfe zu erhalten. Ich frage mich, inwieweit unser „Freund“ wirklich in die Sache verwickelt war, dass er so gut bescheid wusste ... Wie dem auch sei, werden wir dem Magistrat Bericht über die Intrige Saerks und den Tod von Alwesk erstatten müssen.~
+
+@99999982 = ~Moiras Mörder auf der Spur
+
+Es besteht keinerlei Zweifel mehr: Sowohl Corneils Zauber, als auch unsere Untersuchungen haben ergeben, dass Alwesk nicht nur in den Mordfall verwickelt ist, sondern ihn sogar selbst durchgeführt hat!
+
+Magistrat Bylanna hat uns ihre Einwilligung gegeben, den abtrünnigen Captain festzunehmen und zu ihr zu bringen. Wenn möglich sollen wir Alwesk lebend fangen, jedoch bezweifle ich, dass er uns friedlich begleiten wird.~
+
+@99999983 = ~Moiras Mörder auf der Spur
+
+Alle Spuren scheinen auf den Captain der Wache selbst hinzudeuten. Er scheint mit einer größeren Organisation in Verbindung zu stehen. Wer immer sie sein mögen, ich bezweifle, dass sie gute Absichten verfolgen. Unsere Nachforschungen ergaben, dass Alwesk auf jeden Fall an dem Mord an Moira Delryn beteiligt war, allerdings nicht in welcher Rolle. Vielleicht kann ein weiterer Besuch bei Corneil endlich Gewissheit schaffen.~
+
+@99999984 = ~Moiras Mörder auf der Spur
+
+Die Überraschung hat sich als Falle entpuppt! Falahar war, entgegen den Angaben des Captains nicht alleine, sondern hat uns mit einigen Schergen erwartet.
+
+Bei seiner Leiche befand sich ein Brief, der auf einen Verräter hindeutet. Im Brief ist auch von einem ‚Mencar’ die Rede, der sich in der Höhle der sieben Geier aufhalten soll.
+
+Er weiß sicher mehr über den geheimnisvollen ‚A’ von dem Brief stammt. Sollte es sich bei dem Verräter etwa um Captain Alwesk handeln?~
+
+@99999985 = ~Moiras Mörder auf der Spur
+
+Der Verdacht von Captain Alwesk scheint sich bewahrheitet zu haben. Offenbar handelt es sich bei dem Mörder um ein abtrünniges Mitglied der Wache namens Falahar. Zur zeit versteckt er sich in seinem Haus im Osten des Brückenviertels. Der Captain meinte, dass er sich alleine darin aufhält und deshalb nicht so schwer zu überwältigen wäre.~
+
+
+
+@99999990 = ~Moiras Mörder auf der Spur
+
+Das Treffen mit Captain Alwesk war sehr aufschlussreich. Er scheint ein fähiger Mann zu sein, konsequent, souverän und berechnend. Allerdings schien er nicht bestürzt über die Nachricht über Verräter in der Wache zu sein.
+
+Auch er scheint einen ähnlichen Verdacht zu haben, will aber noch mal auf Nummer sicher gehen, ehe er uns bescheid sagt. In etwa sechs Stunden sollen wir uns mit ihm erneut in der Garnison treffen.~
+
+@99999991 = ~Moiras Mörder auf der Spur
+
+Magistrat Bylanna zeigte sich sehr beunruhigt über unsere neuesten Erkenntnisse. Sie riet uns, mit Captain Alwesk in der Garnison an den Docks zu sprechen und ihn über den möglichen Mörder bei der Stadtwache zu informieren.
+
+Außerdem sollten wir die Kette dem Magier Corneil geben, damit er mit einem Erkenntniszauber mehr über den Mörder herausfinden kann.~
+
+@99999992 = ~Moiras Mörder auf der Spur
+
+Im Untergrund trafen wir auf den Hehler, der die Halskette von Moira Delryn gekauft hatte. Leider konnte er uns keinen Namen über den Verkäufer nennen, erwähnte aber, dass dieser in Begleitung einiger Gardisten der Stadtwache war. Also hat unser ‚Freund’ einige sehr hochreichende Beziehungen.
+Vielleicht sollten wir mal mit Magistrat Bylanna über die Sache reden.
+
+Roger erwähnte außerdem, dass die Kette von einem Adligen gekauft wurde. Da diese Adligen gerne mit ihrem Besitz protzen, werden wir ihn wohl an einem Ort finden, an dem viele wohlhabende Bürger Athkatlas verkehren.~
+
+@99999993 = ~Moiras Mörder auf der Spur
+
+Im Untergrund trafen wir auf den Hehler, der die Halskette von Moira Delryn gekauft hatte. Offensichtlich hat ihr Mörder Vorsichtsmaßnahmen getroffen und einige Söldner zurückgelassen, welche den Hehler sofort töten würden, wenn er jemandem von dem Geschäft erzählen würde.
+
+Der Anführer der Söldner, ein gewisser Tarnor, soll sich mit seiner Bande im Norden der Abwasserkanäle aufhalten. Mal sehen, ob der Hehler gesprächiger wird, wenn ich die Bande erledigt habe.~
+
+

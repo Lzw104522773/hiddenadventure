@@ -1,0 +1,10 @@
+IF
+	!GlobalGT("WAMoirQ","Global",11)
+	GlobalGT("WAMoirQ","Global",99)
+	See([PC])
+	NumTimesTalkedTo(0)
+THEN
+	RESPONSE #100
+		Dialogue([PC])
+END
+

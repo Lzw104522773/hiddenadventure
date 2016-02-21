@@ -1,0 +1,2 @@
+ADD_TRANS_ACTION RAELIS BEGIN 21 END BEGIN END
+~SetGlobal("WABardforSH","Global",1)~

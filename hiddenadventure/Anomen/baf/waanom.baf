@@ -1,0 +1,78 @@
+IF
+	OR(6)
+		AreaCheck("AR0700")
+		AreaCheck("AR0400")
+		AreaCheck("AR0500")
+		AreaCheck("AR0900")
+		AreaCheck("AR1000")
+		AreaCheck("AR0020")
+	GlobalTimerExpired("WAAnoKWisp","GLOBAL")
+	Global("AnomenIsKnight","Global",1)
+	Global("WAWispSpawn","Global",0)
+THEN
+	RESPONSE #100
+		CreateCreature("WAWISP",[-1.-1],14)
+		SetGlobal("WAWispSpawn","Global",1)
+		ActionOverride("WAWisp",StartDialogueNoSet("Anomen"))
+END
+
+IF
+	AreaCheck("AR0704")
+	Global("WAMoirQ","Global",1)
+THEN
+	RESPONSE #100
+	StartDialogueNoSet("Anomen")
+END
+
+IF
+	Global("WAPgotK","Global",0)
+	PartyHasItem("WAMOIRK")
+THEN
+	RESPONSE #100
+		SetGlobal("WAPgotK","Global",1)
+		ApplySpellRES("wamoirk",Myself)
+END
+
+IF
+	AreaCheck("AR1002")
+	See("Bylanna")
+	Global("WAMoirQ","Global",3)
+THEN
+	RESPONSE #100
+	StartDialogueNoSet("Anomen")
+END
+
+IF
+	Global("WAStanS","Global",1)
+THEN
+	RESPONSE #100
+	SetGlobal("WAStanS","Global",2)
+	StartDialogueNoSet("Anomen")
+END
+
+IF
+	Global("WAMoirQ","Global",99)
+	AreaCheck("AR0504")
+THEN
+	RESPONSE #100
+		DestroySelf()
+END
+
+IF
+	GlobalGT("WAMoirQ","Global",14)
+	AreaCheck("AR0504")
+	!InParty(Myself)
+	Global("WAAnomBack","Global",0)
+THEN
+	RESPONSE #100
+		SetGlobal("WAAnomBack","Global",1)
+		StartDialogueNoSet("Anomen")
+END
+
+IF
+	Global("WAMoirQ","Global",15)
+	AreaCheck("AR0500")
+THEN
+	RESPONSE #100
+		StartDialogueNoSet("Anomen")
+END

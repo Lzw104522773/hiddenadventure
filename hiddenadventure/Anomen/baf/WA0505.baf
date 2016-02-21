@@ -1,0 +1,14 @@
+IF
+	Global("WAMoirQ","Global",16)
+	Global("WAGuardsSO","Global",0)
+THEN
+	RESPONSE #100
+		SetGlobal("WAGuardsSO","Global",1)
+		CreateCreature("waguard2",[1066.828],12)
+		CreateCreature("waguard3",[1777.575],12)
+		CreateCreature("waguard3",[741.1293],12)
+		CreateCreature("waguard4",[1230.538],12)
+		CreateCreature("waguard4",[779.1017],12)
+		CreateCreature("waguard4",[1259.859],12)
+		CreateCreature("waguard4",[1103.960],12)
+END

@@ -1,0 +1,10 @@
+IF
+	Global("WAMoirQ","Global",10)
+	Global("WAUnlockAr500","Global",0)
+THEN
+	RESPONSE #100
+		SetGlobal("WAUnlockAr500","Global",1)
+		Unlock("DOOR0504")
+		Unlock("DOOR0505b")
+		OpenDoor("DOOR0504")
+END

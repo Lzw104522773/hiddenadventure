@@ -1,0 +1,10 @@
+IF
+	True()
+THEN
+	RESPONSE #100
+		CutSceneId("Terl")
+		MoveToObject("Anomen")
+		Wait(3)
+		StartDialogueNoSet("Anomen")
+END
+

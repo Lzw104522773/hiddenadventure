@@ -1,0 +1,8 @@
+IF
+   Global("WASpawnItem","AR2300",0)
+THEN
+   RESPONSE #100
+      SetGlobal("WASpawnItem","AR2300",1)
+      ActionOverride("Treasury",CreateItem("HALB09B",0,0,0))
+      Continue()
+END

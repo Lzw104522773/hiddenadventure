@@ -1,0 +1,28 @@
+IF
+	Global("WAMoirQ","Global",10)
+	Global("WADeadKeepers","Global",0)
+THEN
+	RESPONSE #100
+		SetGlobal("WADeadKeepers","Global",1)
+		CreateCreature("sguard3",[1015.667],12)
+		CreateCreature("sguard3",[1058.580],12)
+		CreateCreature("sguard3",[773.745],12)
+		CreateCreature("sguard3",[860.786],12)
+		ActionOverride("sguard1",DestroySelf())
+		CreateCreature("Saerk",[992.790],12)
+		CreateCreature("Yusef",[1066.752],12)
+		CreateCreature("Surayah",[923.826],12)
+		CreateCreature("Cor",[1091.818],6)
+END
+
+IF
+	Global("WAMoirQ","Global",16)
+	Global("WAGuardsSE","Global",0)
+THEN
+	RESPONSE #100
+		SetGlobal("WAGuardsSE","Global",1)
+		CreateCreature("waguard1",[1563.1186],12)
+		CreateCreature("waguard3",[1024.751],12)
+		CreateCreature("waguard3",[939.814],12)
+		CreateCreature("waguard3",[331.1150],12)
+END

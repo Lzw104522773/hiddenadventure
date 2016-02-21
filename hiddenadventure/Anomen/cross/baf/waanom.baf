@@ -1,0 +1,58 @@
+IF
+	Global("WAAGARM","Global",0)
+	PartyHasItem("ANOPLAT")
+THEN
+	RESPONSE #100
+		SetGlobal("WAAGARM","Global",1)
+		ApplySpellRES("waanopla",Myself)
+END
+
+IF
+	Global("WAMoirQ","Global",16)
+	AreaCheck("AR0500")
+	Global("WASpawnMess","Global",0)
+THEN
+	RESPONSE #100
+		SetGlobal("WASpawnMess","Global",1)
+		CreateCreatureOffScreen("wamess",1)
+		ActionOverride("wamess",MoveToObject("Anomen"))
+		ActionOverride("wamess",StartDialogueNoSet("Anomen"))
+END
+
+IF
+	Global("WAAGSHL","Global",0)
+	PartyHasItem("NPSHLD")
+THEN
+	RESPONSE #100
+		SetGlobal("WAAGSHL","Global",1)
+		ApplySpellRES("waanoshl",Myself)
+END
+
+IF
+	Global("WAAGHLM","Global",0)
+	PartyHasItem("ANOHELM")
+THEN
+	RESPONSE #100
+		SetGlobal("WAAGHLM","Global",1)
+		ApplySpellRES("waanohlm",Myself)
+END
+
+IF
+	Global("WAMoirQ","Global",16)
+	Global("WAAGSHL2","Global",0)
+	PartyHasItem("NPSHLD")
+THEN
+	RESPONSE #100
+		SetGlobal("WAAGSHL2","Global",1)
+		ApplySpellRES("waanoshl",Myself)
+END
+
+IF
+	Global("WAMoirQ","Global",16)
+	Global("WAAGHLM2","Global",0)
+	PartyHasItem("ANOHELM")
+THEN
+	RESPONSE #100
+		SetGlobal("WAAGHLM2","Global",1)
+		ApplySpellRES("waanohlm",Myself)
+END

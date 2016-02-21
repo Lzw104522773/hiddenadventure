@@ -1,0 +1,8 @@
+IF
+	Global("ElgeaFree","Global",1)
+	Global("wawelthspwn","Global",0)
+THEN
+	RESPONSE #100
+		SetGlobal("wawelthspwn","Global",1)
+		CreateCreature("WAWELTH",[1713.3463],0)
+END

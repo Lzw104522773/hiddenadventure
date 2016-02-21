@@ -1,0 +1,10 @@
+IF
+	!Global("WACreateMencarScrl","Global",1)
+	Dead("sevpat01")
+	Global("WAMoirQ","Global",12)
+	Global("WACreateDropScrl","AR0712",0)
+THEN
+	RESPONSE #100
+		SetGlobal("WACreateDropScrl","AR0712",1)
+		CreateCreature("WASCRLD",[288.453],0)
+END

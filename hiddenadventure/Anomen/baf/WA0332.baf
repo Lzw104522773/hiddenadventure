@@ -1,0 +1,30 @@
+IF
+	Global("WAMoirQ","Global",4)
+	Global("WAALWSpawn","Global",0)
+THEN
+	RESPONSE #100
+		SetGlobal("WAALWSpawn","Global",1)
+		CreateCreature("WAALW",[598.448],6)
+		Continue()
+END
+
+IF
+	Global("WAMoirQ","Global",5)
+	Global("WABAMNG01","Global",1)
+	Global("WABAMNG02","Global",1)
+	Global("WAALWSpawn2","Global",0)
+THEN
+	RESPONSE #100
+		SetGlobal("WAALWSpawn2","Global",1)
+		CreateCreature("WAALW",[598.448],6)
+		Continue()
+END
+
+IF
+	Global("WAMoirQ","Global",9)
+	Global("WAAlweskEnd","Global",0)
+THEN
+	RESPONSE #100
+		SetGlobal("WAAlweskEnd","Global",1)
+		ActionOverride("WAALW",StartDialogueNoSet(Player1))
+END

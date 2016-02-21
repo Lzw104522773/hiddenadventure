@@ -1,0 +1,139 @@
+BEGIN ~WAWisp~
+
+	IF ~NumTimesTalkedTo(0)~ THEN BEGIN 0
+		SAY ~Shhh ... Auf ein Wort, Sir Anomen Delryn.~
+		IF ~~ THEN EXTERN ANOMENJ WAAN01
+	END
+
+	IF ~~ THEN BEGIN 1
+		SAY ~Das soll für Euch nicht von Belang sein. Allerdings besitze ich Informationen, die Euch sicherlich interessieren dürften.~
+		IF ~~ THEN EXTERN ANOMENJ WAAN02
+	END
+
+	IF ~~ THEN BEGIN 2
+		SAY ~Ihr sucht doch sicher noch den Mörder Eurer Schwester, nicht wahr?~
+		IF ~~ THEN EXTERN ANOMENJ WAAN03
+	END
+
+	IF ~~ THEN BEGIN 3
+		SAY ~Zum Beispiel, wo Ihr mehr über den Mörder herausfinden könnt. Und was Ihr benötigt, um den Auftraggeber zu entlarven.~
+		IF ~~ THEN EXTERN ANOMENJ WAAN04
+	END
+	
+	IF ~~ THEN BEGIN 4
+		SAY ~Bedauerlicherweise kann ich Euch seinen Namen nicht direkt nennen. Wenn Ihr ihn aufspüren könnt und dennoch scheitert, ist es nur eine Frage der Zeit, bis er begreift, wer Euch auf seine Spur geschickt hat. Ihr versteht sicher, dass ich dieses Risiko nicht eingehen kann.~
+		IF ~~ THEN EXTERN ANOMENJ WAAN05
+	END
+	
+	IF ~~ THEN BEGIN 5
+		SAY ~Bedenkt, dass Rache Euch Eure Stellung als Ritter kosten kann. Damit würdet Ihr Euren Feinden nur einen weiteren Triumph bescheren. Strebt auf jeden Fall danach, den Urheber Eurer Tragödie der Justiz zu übergeben. Unter dieser Voraussetzung helfe ich Euch!~
+		IF ~~ THEN EXTERN ANOMENJ WAAN06
+	END
+
+	IF ~~ THEN BEGIN 6
+		SAY ~So sei es. Zunächst solltet Ihr wissen, dass der Mörder nach seiner Tat noch einen besonders schäbigen Diebstahl begangen hat: Eine seltene Laeraltränen-Halskette mit dem eingravierten Siegel der Delryns.~
+		IF ~~ THEN EXTERN ANOMENJ WAAN07
+	END
+	
+	IF ~~ THEN BEGIN 7
+		SAY ~Vergesst Euer Versprechen nicht, Sir Anomen. Als Ritter des Ordens seid Ihr daran gebunden.~
+		IF ~~ THEN EXTERN ANOMENJ WAAN08
+	END
+	
+	IF ~~ THEN BEGIN 8
+		SAY ~Es wäre unklug, ein derart kostbares Schmuckstück an einen normalen Händler zu verkaufen. Folglich wird der Mörder jemanden aufsuchen, der im Untergrund handelt ... weiter kann ich Euch momentan nicht helfen, Sir Anomen. Wenn Ihr den Mörder gefunden habt, werdet Ihr wieder von mir hören. Bis dahin werde ich Eure Schritte verfolgen ...~
+		IF ~~ THEN GOTO 9
+	END
+	
+	IF ~~ THEN BEGIN 9
+		SAY ~(die seltsame Stimme wird immer leiser, bis sie nur noch ein Flüstern im Wind ist)~
+		IF ~~ THEN DO ~EscapeArea()~ EXTERN ANOMENJ WAAN09
+	END
+		
+	
+APPEND ANOMENJ
+	
+	IF ~~ THEN BEGIN WAAN01
+		SAY ~Was? Wer seid Ihr, dass Ihr Euch in den Schatten verstecken müsst, um mit mir zu reden?~
+		IF ~~ THEN EXTERN WAWisp 1
+	END
+	
+	IF ~~ THEN BEGIN WAAN02
+		SAY ~Hört endlich auf, in Rätseln zu sprechen und nennt den Grund für Eure Heimlichtuerei!~
+		IF ~~ THEN EXTERN WAWisp 2
+	END
+	
+	IF ~~ THEN BEGIN WAAN03
+		SAY ~Moiras Mörder!? Was wisst Ihr darüber?~
+		IF ~~ THEN EXTERN WAWisp 3
+	END
+	
+	IF ~~ THEN BEGIN WAAN04
+		SAY ~Ihr scheint mehr über den Mord an Moira zu wissen, als Ihr zugebt. Wisst Ihr, wer der Mörder ist? Weshalb nennt Ihr mir seinen Namen nicht hier und jetzt? Wozu dieses Versteckspiel?~
+		IF ~~ THEN EXTERN WAWisp 4
+	END
+	
+	IF ~~ THEN BEGIN WAAN05
+		SAY ~Also könnt Ihr mir nur Anhaltspunkte nennen. So sei es! Wenn ich am Ende diesen elenden Schweinehund in die Finger kriege und Moiras Tod sühnen kann, ist mir alles recht!~
+		IF ~~ THEN EXTERN WAWisp 5
+	END
+	
+	IF ~~ THEN BEGIN WAAN06
+		SAY ~Ich ... verstehe. So sehr es mir auch widerstrebt, ich gebe Euch mein Ehrenwort, die Schuldigen vor den Magistrat zu führen, jedoch nicht selbst Hand an sie zu legen.~
+		IF ~~ THEN EXTERN WAWisp 6
+	END
+	
+	IF ~~ THEN BEGIN WAAN07
+		SAY ~Das ... das war Moiras Lieblingshalskette. Das liebste Geschenk, dass sie von unserer Mutter bekommen hatte. Und dieses Scheusal von Leichenfledderer hat es ihr einfach vom Hals gerissen, nachdem sie tot war? Dafür ...~
+		IF ~~ THEN EXTERN WAWisp 7
+	END
+	
+	IF ~~ THEN BEGIN WAAN08
+		SAY ~Natürlich. Ich werde meinen Eid einhalten. Doch ich verstehe nicht, welche Rolle Moiras Kette bei der Suche nach diesem Schurken spielt.~
+		IF ~~ THEN EXTERN WAWisp 8
+	END
+	
+	IF ~~ THEN BEGIN WAAN09
+		SAY ~Nein wartet! Ich ... bei den neun Höllen! Ich hätte nie es nie für möglich gehalten, eine Spur dieses verfluchten Mörders zu finden! Kommt <CHARNAME>, lasst uns diesen Schurken aufspüren!~
+		IF ~~ THEN REPLY ~Ich weiß nicht, Anomen. Es könnte eine Falle sein. Schließlich wissen wir nichts über unseren geheimnisvollen Informanten.~ GOTO WAAN10
+		IF ~~ THEN REPLY ~Vergesst die Sache, Anomen. Wir haben im Augenblick andere Sorgen!~ GOTO WAAN11
+	END
+	
+	IF ~~ THEN BEGIN WAAN10
+		SAY ~Dem stimme ich Euch zu, CHARNAME, doch wenn es eine Chance gibt, Moiras Mörder zu finden, so MUSS ich sie wahrnehmen. Das müsstet Ihr doch am besten verstehen!~
+		IF ~~ THEN REPLY ~Natürlich verstehe ich Euch, Anomen und ich werde Euch bei Eurer Suche helfen.~ GOTO WAAN12
+		IF ~~ THEN REPLY ~Vergesst die Sache, Anomen. Wir haben im Augenblick andere Sorgen!~ GOTO WAAN11
+	END
+	
+	IF ~~ THEN BEGIN WAAN11
+		SAY ~Vergessen!? Es geht hier schließlich um meine Familie! Schließlich seid Ihr selbst auf der Suche nach demjenigen, der Eure Freundin von Euch nahm. Also, werdet Ihr mich nun unterstützen oder nicht?~
+		IF ~~ THEN REPLY ~Natürlich Anomen. Ihr habt Recht, ich sollte Eure Situation verstehen. Ich werde Euch helfen!~ GOTO WAAN12
+		IF ~~ THEN REPLY ~Verdammt, Anomen, Moira ist tot. Findet Euch endlich damit ab. Ich habe keine Zeit, weiteren Assassinen hinterher zujagen!~ GOTO WAAN15
+	END
+	
+	IF ~~ THEN BEGIN WAAN12
+		SAY ~Ich danke Euch, <CHARNAME>. Ich weiß es zu schätzen, dass Ihr mir helfen wollt.~
+		IF ~~ THEN REPLY ~Habt Ihr eine Ahnung, was unser unbekannter Informant mit ’Untergrund’ meinte?~ GOTO WAAN13
+	END
+	
+	IF ~~ THEN BEGIN WAAN13
+		SAY ~Ich vermute, er meinte die Kanalisation von Athkatla. Dort unten haust jede Menge gesetzesscheues Gesindel. Räuber, Mörder – und sicherlich auch Hehler, schäbige Händler, die Diebesgut kaufen!~
+		IF ~~ THEN REPLY ~Gut, dann wollen wir mal sehen, was uns dort unten erwartet.~ GOTO WAAN14
+	END
+	
+	IF ~~ THEN BEGIN WAAN14
+		SAY ~Ich bin bereit. Es wird Zeit, Gerechtigkeit zu üben!~
+		IF ~~ THEN DO ~AddJournalEntry(@99999998,QUEST)
+		SetGlobal("WAMoirQ","Global",1)
+ ~ EXIT
+	END
+	
+	IF ~~ THEN BEGIN WAAN15
+		SAY ~Dann haben wir uns nichts mehr zu sagen, <CHARNAME>. Setzt Eure Reise fort, doch ohne mich! Ich werde diesen Mörder jagen, ob mit oder ohne Eure Hilfe. Auf dass sich unsere Wege nie wieder kreuzen mögen!~
+		IF ~~ THEN DO ~ChangeAIScript("",DEFAULT)
+SetLeavePartyDialogFile()
+LeaveParty()
+EscapeArea()~ EXIT
+	END
+	
+END

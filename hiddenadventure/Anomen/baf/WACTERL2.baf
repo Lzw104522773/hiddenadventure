@@ -1,0 +1,14 @@
+IF
+	True()
+THEN
+	RESPONSE #100
+		CutSceneId(Player1)
+		ActionOverride("Anomen",ChangeAIScript("",DEFAULT))
+		ActionOverride("Anomen",LeaveParty())
+		Wait(1)
+		ActionOverride("Anomen",EscapeAreaObjectMove("AR0504","Tran0300",1030,860,12))
+		ActionOverride("Terl",EscapeArea())
+		Wait(4)
+		EndCutSceneMode()
+END
+

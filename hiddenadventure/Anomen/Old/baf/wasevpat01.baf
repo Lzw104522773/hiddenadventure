@@ -1,0 +1,8 @@
+IF
+	Global("WAMoirQ","Global",12)
+	Global("WACreateMencarScrl","Global",0)
+THEN
+	RESPONSE #100
+		SetGlobal("WACreateMencarScrl","Global",1)
+		CreateItemGlobal("WAMenScrl","Locals","WAMENCS")
+END

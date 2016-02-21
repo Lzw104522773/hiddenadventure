@@ -1,0 +1,12 @@
+IF
+	Global("WATarnDead","Global",0)
+	Dead("tarnor")
+	Dead("gall")
+	Dead("rengaa")
+	Dead("gaius")
+	Dead("berkref")
+	Dead("draug")
+THEN
+	RESPONSE #100
+		SetGlobal("WATarnDead","GLOBAL",1)
+END

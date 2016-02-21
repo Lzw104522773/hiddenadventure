@@ -1,0 +1,22 @@
+IF
+	True()
+THEN
+	RESPONSE #100
+		CutSceneId("Saerk")
+		CreateCreature("WAMNG1",[1540.1409],0)
+		CreateCreature("WAMNG2",[1633.1335],0)
+		CreateCreature("WAMNG3",[1726.1271],0)
+		CreateCreature("WAMNG4",[1755.1240],0)
+		CreateCreature("WAMNG5",[1816.1189],0)
+		CreateCreature("WAMNG6",[1876.1141],0)
+		CreateCreature("WAJAik",[1637.1235],0)
+		ActionOverride("WAMNG1",MoveToObject("Saerk"))
+		ActionOverride("WAMNG2",MoveToObject("Saerk"))
+		ActionOverride("WAMNG3",MoveToObject("Saerk"))
+		ActionOverride("WAMNG4",MoveToObject("Saerk"))
+		ActionOverride("WAMNG5",MoveToObject("Yusef"))
+		ActionOverride("WAMNG6",MoveToObject("Yusef"))
+		ActionOverride("WAJAik",MoveToObject("Anomen"))
+		Wait(8)
+		EndCutSceneMode()
+END

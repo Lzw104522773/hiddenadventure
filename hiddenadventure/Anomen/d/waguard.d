@@ -1,0 +1,6 @@
+BEGIN ~waguard~
+
+IF ~True()~ THEN BEGIN WAGUARD1
+SAY @0
+IF ~~ THEN EXIT
+END

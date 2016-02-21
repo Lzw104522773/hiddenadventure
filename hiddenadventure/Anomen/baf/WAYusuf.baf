@@ -1,0 +1,14 @@
+IF
+	AreaCheck("AR0504")
+	See(Player1)
+	Global("WAMoirQ","Global",11)
+	Dead("wasguar1")
+	Dead("wasguar2")
+	Dead("wasguar3")
+	Dead("wasguar4")
+	Dead("wasguar5")
+	Dead("wasguar6")
+THEN
+	RESPONSE #100
+	StartDialogueNoSet(Player1)
+END

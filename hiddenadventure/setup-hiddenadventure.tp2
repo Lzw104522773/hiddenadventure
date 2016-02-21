@@ -1,0 +1,515 @@
+BACKUP ~hiddenadventure/backup~
+AUTHOR ~whiteagnus@gmx.de~
+README ~hiddenadventure/hidden-adventure-german.html~
+VERSION ~ALPHA 8~
+
+AUTO_TRA ~hiddenadventure/tra/%s~
+
+LANGUAGE ~German~
+         ~German~
+         ~hiddenadventure/tra/german/setup.tra~
+
+BEGIN @1001
+
+COPY ~hiddenadventure/elgea/cre/WAWELTH.cre~ ~override~
+
+COMPILE ~hiddenadventure/elgea/d/wawelth.d~
+
+COPY_EXISTING ~AR0500.are~ ~override~
+  READ_ASCII 0x94 area_script
+  PATCH_IF (("%area_script%" STRING_COMPARE_CASE "")=0) BEGIN
+  	WRITE_ASCII 0x94 AR0500 (8)
+  	READ_ASCII 0x94 area_script
+  END
+BUT_ONLY
+EXTEND_BOTTOM ~%area_script%.bcs~ ~hiddenadventure/elgea/baf/wa0500.baf~
+
+COMPILE ~hiddenadventure/elgea/baf/WAWELTH.baf~
+
+COPY_EXISTING ~MISC5O.itm~ ~override~
+SAY DESC @1002
+
+BEGIN @2001
+REQUIRE_PREDICATE FILE_EXISTS_IN_GAME ~beltbrd.CRE~ @0
+COPY ~hiddenadventure/farmer/cre/WAGHOUL.CRE~ ~override~
+SAY NAME1 @2002
+SAY NAME1 @2002
+
+COPY ~hiddenadventure/farmer/cre/WAFARM.CRE~ ~override~
+SAY NAME1 @2003
+SAY NAME1 @2003
+
+COMPILE ~hiddenadventure/farmer/dlg/WAFARMBE.d~
+COMPILE ~hiddenadventure/farmer/dlg/WAFARM.d~
+
+COPY_EXISTING ~ar6700.are~ ~override~
+  READ_ASCII 0x94 area_script
+  PATCH_IF (("%area_script%" STRING_COMPARE_CASE "")=0) BEGIN
+  	WRITE_ASCII 0x94 ar6700 (8)
+  	READ_ASCII 0x94 area_script
+  END
+BUT_ONLY
+EXTEND_BOTTOM ~%area_script%.bcs~ ~hiddenadventure/farmer/baf/WA6700.baf~
+
+COPY_EXISTING ~ar6755.are~ ~override~
+  READ_ASCII 0x94 area_script
+  PATCH_IF (("%area_script%" STRING_COMPARE_CASE "")=0) BEGIN
+  	WRITE_ASCII 0x94 ar6755 (8)
+  	READ_ASCII 0x94 area_script
+  END
+BUT_ONLY
+EXTEND_BOTTOM ~%area_script%.bcs~ ~hiddenadventure/farmer/baf/WA6755.baf~
+
+
+BEGIN @3001
+
+APPEND ~STATE.IDS~ ~0x80101FEF CD_STATE_NOTVALID~
+UNLESS ~CD_STATE_NOTVALID~
+
+COMPILE ~hiddenadventure/anomen/d/WAPRELAT.d~
+COMPILE ~hiddenadventure/anomen/d/WAWISP.d~
+COMPILE ~hiddenadventure/anomen/d/WAWWENCH.d~
+COMPILE ~hiddenadventure/anomen/d/WABYL.d~
+
+ACTION_IF FILE_EXISTS_IN_GAME ~C#AJANJ.dlg~ BEGIN
+COMPILE ~hiddenadventure/anomen/cross/d/WAALW.d~
+END ELSE BEGIN
+COMPILE ~hiddenadventure/anomen/d/WAALW.d~
+END
+
+COPY ~hiddenadventure/anomen/cre/wawisp.cre~ ~override~
+SAY NAME1 @3002
+SAY NAME2 @3002
+
+EXTEND_BOTTOM ~ANOMEN.BCS~ ~hiddenadventure/anomen/baf/waanom.baf~
+
+COPY ~hiddenadventure/anomen/itm/WAMOIRK.itm~ ~override~
+SAY NAME1 @3003
+SAY NAME2 @3003
+SAY IDENTIFIED_DESC @3004
+SAY UNIDENTIFIED_DESC @3004
+
+COPY ~hiddenadventure/anomen/spl/WAMOIRK.spl~ ~override~
+SAY 0x9e @3005
+
+COPY_EXISTING ~WWENCH.cre~ ~override~
+ADD_CRE_ITEM ~WAMOIRK~ #0 #0 #0 ~IDENTIFIED~ ~inv16~
+BUT_ONLY
+
+COPY_EXISTING ~Bylanna.cre~ ~override~
+WRITE_ASCII 0x280 ~Bylanna~
+BUT_ONLY
+
+COPY ~hiddenadventure/anomen/cre/WAALW.cre~ ~override~
+SAY NAME1 @3006
+SAY NAME2 @3006
+
+COPY_EXISTING ~AR0332.are~ ~override~
+  READ_ASCII 0x94 area_script
+  PATCH_IF (("%area_script%" STRING_COMPARE_CASE "")=0) BEGIN
+  	WRITE_ASCII 0x94 AR0322 (8)
+  	READ_ASCII 0x94 area_script
+  END
+BUT_ONLY
+EXTEND_BOTTOM ~%area_script%.bcs~ ~hiddenadventure/anomen/baf/WA0332.baf~
+
+COPY_EXISTING ~AR0513.are~ ~override~
+PATCH_IF (SOURCE_SIZE > 0x11c) BEGIN
+    READ_LONG 0x54 actOff
+    FOR (READ_SHORT 0x58 numAct; numAct; numAct -= 0x1) BEGIN
+      READ_ASCII actOff + 0x80 actor
+      PATCH_IF !("%actor%" STRING_COMPARE_CASE "BAMNG02") BEGIN
+        WRITE_EVALUATED_ASCII actOff + 0x48 ~WAMNG02~ #8
+      END
+      actOff += 0x110
+    END
+  END
+BUT_ONLY
+
+
+
+COMPILE ~hiddenadventure/anomen/d/WABAMNG.d~
+COMPILE ~hiddenadventure/anomen/d/WAALW2.d~
+
+COPY ~hiddenadventure/anomen/cre/WAOllik.cre~ ~override~
+SAY NAME1 @3007
+SAY NAME2 @3007
+
+COPY ~hiddenadventure/anomen/cre/WASTAN.cre~ ~override~
+SAY NAME1 @3008
+SAY NAME2 @3008
+
+COMPILE ~hiddenadventure/anomen/baf/WASTAN.baf~
+
+COPY_EXISTING ~AR0525.are~ ~override~
+  READ_ASCII 0x94 area_script
+  PATCH_IF (("%area_script%" STRING_COMPARE_CASE "")=0) BEGIN
+  	WRITE_ASCII 0x94 AR0525 (8)
+  	READ_ASCII 0x94 area_script
+  END
+BUT_ONLY
+EXTEND_BOTTOM ~%area_script%.bcs~ ~hiddenadventure/anomen/baf/WA0525.baf~
+
+COMPILE ~hiddenadventure/anomen/d/waollik.d~
+
+COPY ~hiddenadventure/anomen/itm/WASTANS.itm~ ~override~
+SAY NAME1 @3009
+SAY NAME2 @3009
+SAY IDENTIFIED_DESC @3010
+SAY UNIDENTIFIED_DESC @3010
+
+COMPILE ~hiddenadventure/anomen/baf/WACTERL.baf~
+COMPILE ~hiddenadventure/anomen/d/WAALW3.d~
+COMPILE ~hiddenadventure/anomen/baf/WACTERL2.baf~
+
+COPY_EXISTING ~AR0500.bcs~ ~override~
+DECOMPILE_BCS_TO_BAF
+REPLACE_TEXTUALLY ~!InParty("Anomen")~ ~!InParty("Anomen")
+!Global("WAMoirQ","Global",10)~
+COMPILE_BAF_TO_BCS
+
+COPY_EXISTING ~AR0500.are~ ~override~
+  READ_ASCII 0x94 area_script
+  PATCH_IF (("%area_script%" STRING_COMPARE_CASE "")=0) BEGIN
+  	WRITE_ASCII 0x94 AR0500 (8)
+  	READ_ASCII 0x94 area_script
+  END
+BUT_ONLY
+EXTEND_BOTTOM ~%area_script%.bcs~ ~hiddenadventure/anomen/baf/WA0500.baf~
+
+COPY_EXISTING ~AR0504.are~ ~override~
+  READ_ASCII 0x94 area_script
+  PATCH_IF (("%area_script%" STRING_COMPARE_CASE "")=0) BEGIN
+  	WRITE_ASCII 0x94 AR0504 (8)
+  	READ_ASCII 0x94 area_script
+  END
+BUT_ONLY
+EXTEND_BOTTOM ~%area_script%.bcs~ ~hiddenadventure/anomen/baf/WA0504.baf~
+
+COPY_EXISTING ~AR0505.are~ ~override~
+  READ_ASCII 0x94 area_script
+  PATCH_IF (("%area_script%" STRING_COMPARE_CASE "")=0) BEGIN
+  	WRITE_ASCII 0x94 AR0505 (8)
+  	READ_ASCII 0x94 area_script
+  END
+BUT_ONLY
+EXTEND_BOTTOM ~%area_script%.bcs~ ~hiddenadventure/anomen/baf/WA0505.baf~
+
+EXTEND_BOTTOM ~SGUARD3.bcs~ ~hiddenadventure/anomen/baf/WASGUARD3.baf~
+EXTEND_BOTTOM ~SGUARD2.bcs~ ~hiddenadventure/anomen/baf/WASGUARD3.baf~
+EXTEND_BOTTOM ~SGUARD4.bcs~ ~hiddenadventure/anomen/baf/WASGUARD3.baf~
+
+COPY_EXISTING ~SGUARD4.cre~ ~override~
+WRITE_ASCII 0x250 ~SGUARD4~ #8
+BUT_ONLY
+
+COMPILE ~hiddenadventure/anomen/d/WASAERK.d~
+COMPILE ~hiddenadventure/anomen/d/WASAERKFix.d~
+EXTEND_BOTTOM ~SAERK.bcs~ ~hiddenadventure/anomen/baf/WASAERK.baf~
+
+COPY ~hiddenadventure/anomen/cre/WASGUAR1.CRE~ ~override~
+	 ~hiddenadventure/anomen/cre/WASGUAR2.CRE~ ~override~
+	 ~hiddenadventure/anomen/cre/WASGUAR3.CRE~ ~override~ 
+	 ~hiddenadventure/anomen/cre/WASGUAR4.CRE~ ~override~
+	 ~hiddenadventure/anomen/cre/WASGUAR5.CRE~ ~override~
+	 ~hiddenadventure/anomen/cre/WASGUAR6.CRE~ ~override~
+SAY NAME1 @3011
+SAY NAME2 @3011
+
+COMPILE ~hiddenadventure/anomen/baf/WASGuard.baf~
+
+COPY ~hiddenadventure/anomen/itm/WABLUN01.itm~ ~override~
+SAY NAME1 @3012
+SAY NAME2 @3012
+SAY IDENTIFIED_DESC @3013
+SAY UNIDENTIFIED_DESC @3013
+
+EXTEND_BOTTOM ~YUSEF.bcs~ ~hiddenadventure/anomen/baf/WAYusuf.baf~
+COMPILE ~hiddenadventure/anomen/d/WASAERK2.d~
+COMPILE ~hiddenadventure/anomen/baf/WASJaik.baf~
+
+COPY_EXISTING ~AMNG1.cre~ ~override/WAMNG1.cre~
+WRITE_ASCII 0x280 ~WAMNG1~ #8
+BUT_ONLY
+
+COPY_EXISTING ~AMNG1.cre~ ~override/WAMNG2.cre~
+WRITE_ASCII 0x280 ~WAMNG2~ #8
+BUT_ONLY
+
+COPY_EXISTING ~AMNG1.cre~ ~override/WAMNG3.cre~
+WRITE_ASCII 0x280 ~WAMNG3~ #8
+BUT_ONLY
+
+COPY_EXISTING ~AMNG1.cre~ ~override/WAMNG4.cre~
+WRITE_ASCII 0x280 ~WAMNG4~ #8
+BUT_ONLY
+
+COPY_EXISTING ~AMNG1.cre~ ~override/WAMNG5.cre~
+WRITE_ASCII 0x280 ~WAMNG5~ #8
+BUT_ONLY
+
+COPY_EXISTING ~AMNG1.cre~ ~override/WAMNG6.cre~
+WRITE_ASCII 0x280 ~WAMNG6~ #8
+BUT_ONLY
+
+COPY_EXISTING ~INSPECT.cre~ ~override/WAJAIK.cre~
+SAY NAME1 @3014
+SAY NAME2 @3014
+WRITE_ASCII 0x248 ~WAJAIK~ #8
+WRITE_ASCII 0x280 ~WAJAIK~ #8
+WRITE_ASCII 0x2cc ~WAJAIK~ #8
+BUT_ONLY
+
+COMPILE ~hiddenadventure/anomen/d/WAJAIK.d~
+COMPILE ~hiddenadventure/anomen/baf/WAJAIK.baf~
+COMPILE ~hiddenadventure/anomen/baf/WASJAIK2.baf~
+COMPILE ~hiddenadventure/anomen/d/WAJAIK2.d~
+COMPILE ~hiddenadventure/anomen/d/WASURY.d~
+COMPILE ~hiddenadventure/anomen/d/WAAnAfter.d~
+
+COPY_EXISTING ~sguard1.cre~ ~override/waguard1.cre~
+			  ~sguard2.cre~ ~override/waguard2.cre~
+			  ~sguard3.cre~ ~override/waguard3.cre~
+			  ~sguard4.cre~ ~override/waguard4.cre~
+WRITE_ASCII 0x248 ~~ #8
+WRITE_ASCII 0x250 ~~ #8
+WRITE_ASCII 0x258 ~~ #8
+WRITE_ASCII 0x280 ~waguard~ #8
+WRITE_ASCII 0x2cc ~waguard~ #8
+BUT_ONLY
+
+COMPILE ~hiddenadventure/anomen/d/WAGUARD.d~
+
+COPY_EXISTING ~SButler.cre~ ~override~
+SAY NAME1 @3024
+SAY NAME2 @3024
+BUT_ONLY
+
+COPY_EXISTING ~SCook.cre~ ~override~
+SAY NAME1 @3025
+SAY NAME2 @3025
+BUT_ONLY
+
+COPY ~hiddenadventure/anomen/sto/wabut.sto~ ~override~
+SAY NAME2 @3026
+
+COMPILE ~hiddenadventure/anomen/d/WASCook.d~
+COMPILE ~hiddenadventure/anomen/d/WABUT.d~
+
+COPY ~hiddenadventure/anomen/sto/wabag02.sto~ ~override~
+COPY ~hiddenadventure/anomen/sto/wabag06.sto~ ~override~
+COPY ~hiddenadventure/anomen/itm/wabag02.itm~ ~override~
+COPY ~hiddenadventure/anomen/itm/wabag06.itm~ ~override~
+
+ACTION_IF FILE_EXISTS_IN_GAME ~ANOPLAT.itm~ BEGIN
+
+	COPY_EXISTING ~ANOPLAT.itm~ ~override~
+		WRITE_BYTE 0x1e 227
+	BUT_ONLY
+	
+	COPY_EXISTING ~NPSHLD.itm~ ~override~
+		WRITE_BYTE 0x1e 227
+	BUT_ONLY
+	
+	COPY_EXISTING ~ANOHELM.itm~ ~override~
+		WRITE_BYTE 0x1e 227
+	BUT_ONLY
+	
+	EXTEND_BOTTOM ~ANOMEN.bcs~ ~hiddenadventure/anomen/cross/baf/waanom.baf~
+	
+	COPY ~hiddenadventure/anomen/cross/spl/waanopla.spl~ ~override~
+	SAY 0x9e @3027
+	BUT_ONLY
+	
+	COPY ~hiddenadventure/anomen/cross/spl/waanohlm.spl~ ~override~
+	SAY 0x9e @3029
+	BUT_ONLY
+	
+	COPY ~hiddenadventure/anomen/cross/spl/waanoshl.spl~ ~override~
+	SAY 0x9e @3030
+	BUT_ONLY
+	
+	COPY ~hiddenadventure/anomen/cross/cre/wamess.cre~ ~override~
+	SAY NAME1 @3028
+	SAY NAME2 @3028
+	
+	
+	
+	COPY_EXISTING_REGEXP ~AR0[2-5]00.bcs~ ~override~
+	DECOMPILE_BCS_TO_BAF
+	REPLACE_TEXTUALLY ~!GlobalTimerNotExpired("G3OSTakeStuff","MYAREA")~ ~!GlobalTimerNotExpired("G3OSTakeStuff","MYAREA")
+	!Global("WASpawnMess","Global",1)~
+	COMPILE_BAF_TO_BCS
+	
+	COPY_EXISTING_REGEXP ~AR0[7-9]00.bcs~ ~override~
+	DECOMPILE_BCS_TO_BAF
+	REPLACE_TEXTUALLY ~!GlobalTimerNotExpired("G3OSTakeStuff","MYAREA")~ ~!GlobalTimerNotExpired("G3OSTakeStuff","MYAREA")
+	!Global("WASpawnMess","Global",1)~
+	COMPILE_BAF_TO_BCS
+	
+	COPY_EXISTING ~AR1000.bcs~ ~override~
+	DECOMPILE_BCS_TO_BAF
+	REPLACE_TEXTUALLY ~!GlobalTimerNotExpired("G3OSTakeStuff","MYAREA")~ ~!GlobalTimerNotExpired("G3OSTakeStuff","MYAREA")
+	!Global("WASpawnMess","Global",1)~
+	COMPILE_BAF_TO_BCS
+	
+	ACTION_IF FILE_EXISTS_IN_GAME ~C2ANOM01.itm~ BEGIN
+	COMPILE ~hiddenadventure/anomen/cross/d/depends/wamess.d~
+	END ELSE BEGIN
+	COMPILE ~hiddenadventure/anomen/cross/d/wamess.d~
+	
+	COPY_EXISTING ~WSMITH01.dlg~ ~override~
+	DECOMPILE_DLG_TO_D
+	REPLACE_TEXTUALLY ~SetGlobal("XO#ItemUp","ar0334",30)~ ~SetGlobal("XO#ItemUp","ar0334",30)
+	SetGlobal("WASHLDINProduce","Global",1)~
+	COMPILE_D_TO_DLG
+	END
+	
+END
+
+BEGIN @4001
+COMPILE ~hiddenadventure/Jerlia/d/WAJERL.d~
+
+COPY ~hiddenadventure/Jerlia/cre/WAJERLIA.cre~ ~override~
+
+COPY ~hiddenadventure/Jerlia/sto/WAJERLIA.sto~ ~override~
+SAY NAME2 @4001
+
+COPY_EXISTING ~ar0700.are~ ~override~
+  READ_ASCII 0x94 area_script
+  PATCH_IF (("%area_script%" STRING_COMPARE_CASE "")=0) BEGIN
+  	WRITE_ASCII 0x94 ar0700 (8)
+  	READ_ASCII 0x94 area_script
+  END
+BUT_ONLY
+EXTEND_BOTTOM ~%area_script%.bcs~ ~hiddenadventure/Jerlia/baf/WA0700.baf~
+
+COPY_EXISTING ~MISC5K.itm~ ~override~
+
+BEGIN @5001
+
+COPY_EXISTING ~TEMLATH.sto~ ~override~
+ADD_STORE_ITEM ~MISCAU~ #1 #0 #0 ~IDENTIFIED~ #1 ~UNLIMITED~
+BUT_ONLY
+
+BEGIN @6001
+
+COPY_EXISTING ~SAHPR2.cre~ ~override~
+REMOVE_CRE_ITEM ~HALB09B~
+BUT_ONLY
+
+COPY_EXISTING ~AR2300.are~ ~override~
+  READ_ASCII 0x94 area_script
+  PATCH_IF (("%area_script%" STRING_COMPARE_CASE "")=0) BEGIN
+  	WRITE_ASCII 0x94 AR2300 (8)
+  	READ_ASCII 0x94 area_script
+  END
+BUT_ONLY
+EXTEND_TOP ~%area_script%.bcs~ ~hiddenadventure/WaveBlade/baf/wa2300.baf~
+
+BEGIN @7001
+REQUIRE_PREDICATE FILE_EXISTS_IN_GAME ~beltbrd.CRE~ @0
+
+
+COPY_EXISTING ~ARAM00.are~ ~override~
+  READ_ASCII 0x94 area_script
+  PATCH_IF (("%area_script%" STRING_COMPARE_CASE "")=0) BEGIN
+  	WRITE_ASCII 0x94 ARAM00 (8)
+  	READ_ASCII 0x94 area_script
+  END
+BUT_ONLY
+EXTEND_TOP ~%area_script%.bcs~ ~hiddenadventure/SilverDagger/baf/WAAM00.baf~
+
+COPY_EXISTING ~AR0603.are~ ~override~
+  READ_ASCII 0x94 area_script
+  PATCH_IF (("%area_script%" STRING_COMPARE_CASE "")=0) BEGIN
+  	WRITE_ASCII 0x94 AR0603 (8)
+  	READ_ASCII 0x94 area_script
+  END
+BUT_ONLY
+EXTEND_TOP ~%area_script%.bcs~ ~hiddenadventure/SilverDagger/baf/WA0603.baf~
+
+BEGIN @8001
+
+COPY_EXISTING ~AR0522.are~ ~override~
+  READ_BYTE  0x48 "flags"
+  WRITE_BYTE 0x48 ("%flags%" BOR 0b10000000)
+BUT_ONLY_IF_IT_CHANGES
+
+COPY_EXISTING ~AR0523.are~ ~override~
+  READ_BYTE  0x48 "flags"
+  WRITE_BYTE 0x48 ("%flags%" BOR 0b10000000)
+BUT_ONLY_IF_IT_CHANGES
+
+BEGIN @9001
+REQUIRE_PREDICATE FILE_EXISTS_IN_GAME ~beltbrd.CRE~ @0
+
+COPY ~hiddenadventure/Sylar/cre/WASYLAR.cre~ ~override~
+SAY NAME1 @9002
+SAY NAME2 @9002
+
+COPY_EXISTING ~AR7809.are~ ~override~
+  READ_ASCII 0x94 area_script
+  PATCH_IF (("%area_script%" STRING_COMPARE_CASE "")=0) BEGIN
+  	WRITE_ASCII 0x94 AR7809 (8)
+  	READ_ASCII 0x94 area_script
+  END
+BUT_ONLY
+EXTEND_TOP ~%area_script%.bcs~ ~hiddenadventure/Sylar/baf/WA7809.baf~
+
+COMPILE ~hiddenadventure/Sylar/d~
+
+BEGIN @100001
+COMPILE ~hiddenadventure/Bard/d~
+
+BEGIN @110001
+COPY ~hiddenadventure/silversword/eff/WAHIT1.EFF~ ~override~
+COPY ~hiddenadventure/silversword/eff/WADAM1.EFF~ ~override~
+
+COPY_EXISTING ~SW2H15.itm~ ~override~
+SAY DESC @110002
+SET opcode = 177
+SET target = 1
+SET power = 0
+SET parameter2 = 2
+SET parameter1 = 0
+SET timing = 2
+SET resist_dispel = 0
+SET duration = 0
+SET probability1 = 100
+SET probability2 = 0
+SPRINT resource WAHIT1
+SET dicenumber = 0
+SET dicesize = 0
+SET savingthrow = 0
+SET savebonus = 0
+SET insert_point = 0
+LAUNCH_PATCH_MACRO ADD_ITEM_EQEFFECT
+SET opcode = 177
+SET target = 1
+SET power = 0
+SET parameter2 = 2
+SET parameter1 = 0
+SET timing = 2
+SET resist_dispel = 0
+SET duration = 0
+SET probability1 = 100
+SET probability2 = 0
+SPRINT resource WADAM1
+SET dicenumber = 0
+SET dicesize = 0
+SET savingthrow = 0
+SET savebonus = 0
+SET insert_point = 1
+LAUNCH_PATCH_MACRO ADD_ITEM_EQEFFECT
+LAUNCH_PATCH_FUNCTION ~ADD_ITEM_EFFECT~ INT_VAR
+    opcode        = "55"
+    target        = "2"
+    parameter2		= "4"
+    parameter1		= "124"
+    timing				= "1"
+    probability1	= "100"
+    header				= "1"
+    type					= "99"
+END
+BUT_ONLY

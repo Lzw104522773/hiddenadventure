@@ -1,0 +1,21 @@
+IF
+	Global("WAMoirQ","Global",6)
+	Global("WAOSpawn","Global",0)
+	InParty("Anomen")
+THEN
+	RESPONSE #100
+		SetGlobal("WAOSpawn","Global",1)
+		CreateCreature("WAOllik",[607.212],14)
+		CreateCreature("WASTAN",[657.209],14)
+		Continue()
+END
+
+IF
+	Global("WAMoirQ","Global",7)
+	PartyHasItem("WASTANS")
+	Global("WAStanS","Global",0)
+THEN
+	RESPONSE #100
+		SetGlobal("WAStanS","Global",1)
+		AddJournalEntry(@3015,QUEST)
+END

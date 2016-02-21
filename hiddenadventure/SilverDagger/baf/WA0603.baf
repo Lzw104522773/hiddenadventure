@@ -1,0 +1,8 @@
+IF
+	Global("WAIHaveDagger","GLOBAL",1)
+THEN
+	RESPONSE #100
+		SetGlobal("WAIHaveDagger","GLOBAL",2)
+		ActionOverride("Container 20",CreateItem("DAGG09",0,0,0))
+		Continue()
+END

@@ -1,0 +1,17 @@
+IF
+	True()
+THEN
+	RESPONSE #100
+		CutSceneId(Player1)
+		ActionOverride("Saerk",EscapeAreaObject("Tran0500"))
+		ActionOverride("Yusef",EscapeAreaObject("Tran0500"))
+		ActionOverride("Cor",EscapeAreaObject("Tran0500"))
+		ActionOverride("WAMNG1",EscapeAreaObject("Tran0500"))
+		ActionOverride("WAMNG2",EscapeAreaObject("Tran0500"))
+		ActionOverride("WAMNG3",EscapeAreaObject("Tran0500"))
+		ActionOverride("WAMNG4",EscapeAreaObject("Tran0500"))
+		ActionOverride("WAMNG5",EscapeAreaObject("Tran0500"))
+		ActionOverride("WAMNG6",EscapeAreaObject("Tran0500"))
+		Wait(8)
+		EndCutSceneMode()
+END

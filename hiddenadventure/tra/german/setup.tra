@@ -1,0 +1,184 @@
+@0    = ~Hidden Adventure benötigt BGT um zu funktionieren. Installation wird abgebrochen.~
+
+
+
+
+
+//Erweiterte Handlung um Lady Elgea
+@1001    = ~Erweiterte Handlung um Lady Elgea~
+@1002    = ~Zwei aufwendig gefertigte Pantalons aus Silber. Dieses Familienstück wurde Euch von Welther als Lohn für die Befreiung von Lady Elgea überbracht.~
+
+
+
+
+//Ein besorgter Bauer
+@2001    = ~Ein besorgter Bauer~
+@2002    = ~Ghul~
+@2003    = ~Landwirt~
+@2004	 = ~Ein besorgter Bauer
+
+Der Bauer hat mich gebeten, in seinem Haus vorbeizukommen, falls wir uns der Sache annehmen wollen.~
+@2005	 = ~Ein besorgter Bauer
+	
+Der Bauer aus Beregost, braucht sich nun keine Sorgen mehr zu machen, der Ghul, der ihn Nacht für Nacht heimsuchte ist nun zerstört.~
+@2006	 = ~Ein besorgter Bauer
+
+In der Nähe von Beregost erzählte uns ein Bauer, dass nicht weit von seinem Haus entfernt irgendetwas umherstreift. Er weiß jedoch nicht, was es ist.~
+
+
+
+//Erweiterte Anomenhandlung
+@3001    = ~Erweiterte Anomenhandlung~
+@3002    = ~Flüsternde Stimme~
+@3003	 = ~Familienkette der Delryns~
+@3004	 = ~Dieses wertvolle Schmuckstück ist seit vielen Generationen im Besitz der Familie Delryn. Anomens Schwester Moira liebte es, diese Kette zu tragen, da es das letzte Geschenk ihrer Mutter an sie war.
+
+Schutz gegen Lebenskraftenzug
+2 x täglich Sonnenfeuer
+Kann nur von Anomen verwendet werden.~
+@3005	 = ~Diese Kette kann nur von Anomen verwendet werden.~
+@3006	 = ~Alwesk~
+@3007	 = ~Ollik~
+@3008	 = ~Stanial~
+@3009	 = ~Neue Anweisungen~
+@3010	 = ~Stanial und Ollik,
+
+Dank Eurer ‚kleinen Ausschweifung’ im Delryn-Anwesen kann ich nicht mehr riskieren, Euch dort als Spione einzusetzen – geschweigeden Euch einfach in der Stadt herumspazieren zu lassen. Auch wenn es offizell keine Zeugen gibt, muss ich sichergehen, dass man euch beide nicht mit mir in Verbindung bringt!
+Ihr verdankt es nur den Diensten, die Ihr mir mir bereits erwiesen habt, dass ich so großzügig bin, Euch ein Versteck zu besorgen, statt Euch einfach ‚verschwinden’ zu lassen.
+Über meine Geschäftsbeziehungen zu Renal Blutskalp und den Schattendieben habe ich ein Haus im Brückenviertel gemietet, gegenüber dem Helm-Tempel. Die Gerüchte, dass es dort nicht mit rechten Dingen zugeht sollte Euch genügend Sicherheit bieten, bis sich der Staub gelegt hat. Freunde, die Schattendiebe für mein Geschäft organisiert haben. 
+
+Solange Ihr folgende Regeln einhaltet, wird Euch keine Gefahr drohen:
+1. Verlasst das Haus nicht, ehe ich Euch Anweisung dazu gebe!
+2. Vergreift Euch nicht an den Gegenständen, die dort lagern – die Schattendiebe sehen es nicht gern, wenn man sich an ihren Waren bedient!
+3. Betretet unter keinen Umständen die Gruft im Untergeschoss. Renal wies mich darauf hin, dass dort niemand Zugang habe – Wer es dennoch tut, würde es bitter bereuen!
+
+Wenn Ihr diese Dinge beachtet, wird Eure Zukunft weiterhin gesichtert bleiben.
+
+Saerk Farradh~
+@3011	 = ~Gedungener Schläger~
+@3012	 = ~Keule +1~
+@3013	 = ~Meist besteht eine Keule aus einem festen Stock aus Hartholz, der am Griff schmal ist und zum Ende hin breiter wird. Diese einfache Waffe ist im Gebrauch, seit Menschen Werkzeuge benutzen. Da jeder ein brauchbares festes Holzstück finden und herumschleudern kann, ist die Keule als Waffe weit verbreitet.
+
+SPEZIFISCHE EIGENSCHAFTEN:
+
+ETW0: -1
+Schaden: 1W6+1 (Wuchtwaffe)
+Gewicht: 3
+Initiativefaktor: 4
+Waffenfertigkeit: Keule
+Waffentyp: einhändig
+Mindeststärke: 5
+Kann nicht verwendet werden von:
+ Magiern~
+@3014		 = ~Leutnant Jaiken~
+@3015		 = ~Moiras Mörder auf der Spur
+
+Wir konnten die Mörder Stanial und Ollik in dem Versteck finden, das uns der Captain genannt hat. Das Schriftstück aus Stanial’s Tasche lieferte uns den endgültigen Beweis, dass Saerk Farradh mit den Schattendieben gemeinsame Sache macht!
+
+Captain Alwesk wird sicher erfreut sein, dieses Schriftstück zu Gesicht zu bekommen. Zwei Mörder unschädlich gemacht und eine schöne Belohnung für eine Information – was will man mehr?~
+@3016		 = ~Moiras Mörder auf der Spur
+
+Das Treffen mit Captain Alwesk war sehr aufschlussreich. Er scheint ein fähiger Mann zu sein, konsequent, souverän und berechnend. Trotz seines barschen Tonfalls war er sofort bereit, uns bei der Suche nach den Mördern Stanial und Ollik zu helfen. Während er sich im Hafengebiet umhört, sollen wir zwei Soldaten ausfindig machen, die der Captain seit längerem vermisst. Da er die beiden öfters in Delosars Schänke im Brückenviertel aufgespürt hat, riet er uns, dort nach seinen Leuten zu suchen.
+
+Ich hoffe, dass seine Nachforschungen in der Zwischenzeit erfolgreich sind ...~
+@3017		 = ~Moiras Mörder auf der Spur
+
+Captain Alwesk hat tatsächlich herausgefunden, wo sich die Mörder Stanial und Ollik versteckt halten! Es handelt sich um ein Haus im Brückenviertel, das sich gegenüber des Helm-Tempels befindet. Laut dem Captain gehörte das Gebäude den Schattendieben, welche es an Saerk Farradh verkauft, dem Erzfeind von Anomens Vater!
+
+Nach anfänglichen Überlegungen gestattete uns der Captain, die beiden Mörder sebst zu stellen, stellte auch eine Belohnung in Aussicht, sollten wir auf Hinweise stoßen, welche auf die Verbindung Saerks zu den Schattendieben schließen lassen.~
+@3018		 = ~Moiras Mörder auf der Spur
+
+Magistrat Bylanna war über unsere neuesten Erkenntnisse überrascht, da die beiden Arbeiter offenbar mit einer Klage gegen Lord Cor vor den Rat getreten waren. Sie riet uns, mit Captain Alwesk in der Garnison an den Docks zu sprechen und ihm die Namen der beiden Schuldigen zu nennen. Sie wies Anomen außerdem daraufhin, keinerlei Selbstjustiz zu üben und die Verhaftung von Stanial und Ollik dem Captain zu überlassen.~
+@3019		 = ~Moiras Mörder auf der Spur
+
+Während unserem Aufenthalt in Athkatla wurden wir von einer mysteriösen Person angesprochen. Dieser Jemand scheint zu wissen, wer Anomens Schwester Moira auf dem Gewissen hat. Leider verriet er uns keinen Namen, gab uns jedoch einen Hinweis, wie wir den Mörder finden können. Entgegen allen Erkenntnissen der Wache gibt es eine weitere Zeugin des Mordes, welche uns helfen kann, diesen Fall aufzuklären. Um sie zu finden,sollen wir mit der Schankmaid im Mithrest Inn reden. Laut unserem unbekannten “Verbündeten“ soll sie uns weiterhelfen können.~
+@3020		 = ~Moiras Mörder auf der Spur
+
+Wie sich herausstellte, war die mysteriöse Zeugin keine andere, als die Schankmaid Rebecca, welche einst im Haushalt der Delryns gearbeitet hat und Moiras Freundin war. Sie erzählte uns, wie sie Moira heimlich besuchte, ehe sie von zwei Einbrechern überrascht wurden. Rebecca konnte sich rechtzeitig verstecken und beobachtete, wie einer der beiden Moira aus Wut tötete, weil sie keine Wertsachen bei sich trug, die er verlangte. Der hinzukommende Hauswächter wurde ebenfalls ermordet. Glücklicherweise konnte Rebecca die Namen der Schurken hören, ehe sie vom Tatort flohen: Stanial und Ollik. 
+Anomen erkannte die Namen der beiden, offenbar verärgerte Lagerarbeiter im Dienste seines Vaters. Er drängte, sofort zur Ratshalle aufzubrechen, um Magistrat Bylanna von unseren Erkenntnissen zu berichten.~
+@3021		  = ~Moiras Mörder auf der Spur
+
+Captain Alwesk war sehr erfreut zu hören, dass alles nach Plan gelaufen ist..
+Jedoch hatte das Schicksal noch weitere Überraschungen für uns vorbereitet: Ein Bote teilte uns mit, das Anomen Vater, Lord Cor beschlossen hatte, eigenhändig Rache am vermeintlichen Mörder seiner Tochter zu nehmen. Anomen brach besorgt zum Anwesen der Farradhs auf.
+Captain Alwesk befürchtet, dass die Sache ausarten könnte, wenn ich Anomen nicht folge – eine Befürchtung, die ich auch habe. Ich werde nicht zulassen, dass Anomen etwas geschieht und ihn notfalls auch vor sich selbst beschützen, sollte es zu einer Konfrontation mit Saerk kommen.~
+@3022		  = ~Moiras Mörder auf der Spur
+
+Captain Alwesk war sehr erfreut zu hören, dass alles nach Plan gelaufen ist..
+Jedoch hatte das Schicksal noch weitere Überraschungen für uns vorbereitet: Ein Bote teilte uns mit, das Anomen Vater, Lord Cor beschlossen hatte, eigenhändig Rache am vermeintlichen Mörder seiner Tochter zu nehmen. Anomen brach besorgt zum Anwesen der Farradhs auf.
+Captain Alwesk befürchtet, dass die Sache ausarten könnte, wenn ich Anomen nicht folge.
+
+Was mich angeht, ist dieser Fall abgeschlossen. Wenn Anomen seinem närrischen Vater helfen will, soller es tun. Höchstwarscheinlich wird es keine angenehmen Konsequenzen haben, was er auch tun wird.~
+@3023		   = ~Moiras Mörder auf der Spur
+
+Wir erreichten das Anwesen des Kaufmannes gerade rechtzeitig, um mit Anomens Hilfe seinen Vater davon abzuhalten, Saerk in Selbstjustiz für den vermeintlichen Mord an Moira zu töten. In einem hitzigen Gespräch stellte sich heraus, dass keine andere als Surayah Farradh, Saerks Tochter unsere mysteriöse Informantin war! Sie war trotz der Feindschaft ihrer beiden Häuser mit Moira befreundet und half uns deshalb, ihre Mörder zu finden. Allerdings wusste sie nicht, dass die beiden Verbrecher für ihren Vater arbeiteten und dieser mit den Schattendieben zu tun hatte!
+Ehe es zum Schlimmsten kommen konnte, wurden Saerk, sein Sohn Yusef und Anomens Vater von der Wache verhaftet. Es hat zwar lang gedauert, doch der Mordfall um Anomens Schwester ist endlich aufgeklärt. Ich hoffe, dass es ihm hilft, etwas inneren Frieden zu finden.~
+@3024		    = ~Buttler~
+@3025		    = ~Köchin~
+@3026			= ~Warendepot der Farradhs~
+@3027		    = ~Diese Rüstung kann nur von Anomen verwendet werden.~
+@3028		    = ~Bote des Konzils~
+@3029		    = ~Dieser Helm kann nur von Anomen verwendet werden.~
+@3030		    = ~Dieses Schild kann nur von Anomen verwendet werden.~
+
+//Jerlias Erzladen
+@4001    = ~Jerlias Erzladen~
+
+//Elfisches heiliges Wasser im Lathander Tempel
+@5001   = ~Elfisches heiliges Wasser im Lathander Tempel~
+
+//Wellenklinge in Schatzkammer
+@6001   = ~Wellenklinge in Schatzkammer~
+
+//Silberdolch in Irenicus Dungeon
+@7001   = ~Silberdolch in Irenicus Dungeon~
+
+//Barden können in ihrer Feste (5 Kruegen) uebernachten
+@8001   = ~Barden können in ihrer Feste (5 Kruegen) uebernachten~
+
+//Leichen fuer einen guten Zweck
+@9001   = ~Leichen fuer einen guten Zweck~
+@9002   = ~Sylar~
+@9003	= ~Leichen für einen guten Zweck
+
+Im Geschäft der Stille begegnete mir ein elfischer Nekromant namens Sylar. Offensichtlich hat er eine neue Methode entdeckt, die Nekromantie so einzusetzen, dass er Lebewesen wie ein Kleriker erwecken könnte. Sollte er das schaffen, könnte er zahlreiche Vorurteile, welche die Leute gegen Nekromanten hegen, entkräftigen. Für seine Forschungen braucht er allerdings tote Körper, die ich ihm aus der Kanalisation besorgen soll. 
+
+Er ist bereit, 150 Goldstücke pro überbrachte Leiche zu bezahlen. Da kann ich ja drei Fliegen mit einer Klappe schlagen: Ich helfe der Wissenschaft, verdiene etwas Zusatzgold dabei und tue dabei sogar noch etwas für die Umwelt!~
+@9004	= ~Leichen für einen guten Zweck
+
+Im Geschäft der Stille begegnete mir ein elfischer Nekromant namens Sylar. Offensichtlich hat er eine neue Methode entdeckt, die Nekromantie so einzusetzen, dass er Lebewesen wie ein Kleriker erwecken könnte. Sollte er das schaffen, könnte er zahlreiche Vorurteile, welche die Leute gegen Nekromanten hegen, entkräftigen. Für seine Forschungen braucht er allerdings tote Körper, die ich ihm aus der Kanalisation besorgen soll. 
+
+Er ist bereit, 150 Goldstücke pro überbrachte Leiche zu bezahlen. Allerdings war ich nicht interessiert, ihm zu helfen. Sollte ich es mir anders überlegen, weiß ich, wo ich ihn finde.~
+@9005	= ~Leichen für einen guten Zweck
+
+Im Geschäft der Stille begegnete mir ein elfischer Nekromant namens Sylar. Offensichtlich hat er eine neue Methode entdeckt, die Nekromantie so einzusetzen, dass er Lebewesen wie ein Kleriker erwecken könnte. Sollte er das schaffen, könnte er zahlreiche Vorurteile, welche die Leute gegen Nekromanten hegen, entkräftigen. Für seine Forschungen braucht er allerdings tote Körper, die ich ihm aus der Kanalisation besorgen soll. 
+
+Er ist bereit, 150 Goldstücke pro überbrachte Leiche zu bezahlen. Da kann ich ja drei Fliegen mit einer Klappe schlagen: Ich helfe mit, die Vorurteile gegen Nekromanten auszuräumen, verdiene etwas Zusatzgold dabei und tue dabei sogar noch etwas für die Umwelt!~
+@9006	= ~Leichen für einen guten Zweck
+
+Im Geschäft der Stille begegnete mir ein elfischer Nekromant namens Sylar. Offensichtlich hat er eine neue Methode entdeckt, die Nekromantie so einzusetzen, dass er Lebewesen wie ein Kleriker erwecken könnte. Sollte er das schaffen, könnte er zahlreiche Vorurteile, welche die Leute gegen Nekromanten hegen, entkräftigen. Für seine Forschungen braucht er allerdings tote Körper, die ich ihm aus der Kanalisation besorgen soll. 
+
+Er ist bereit, 150 Goldstücke pro überbrachte Leiche zu bezahlen. Da kann ich ja drei Fliegen mit einer Klappe schlagen: Ich helfe der Wissenschaft, verdiene etwas Zusatzgold dabei und tue dabei sogar noch etwas für die Umwelt!~
+
+//Ein Barde für die Bardenfestung
+@100001   = ~Ein Barde für die Bardenfestung~
+
+//Silberschwert gegen Gedankenschinder und Lykanthropen
+@110001   = ~Silberschwert gegen Gedankenschinder und Lykanthropen~
+@110002   = ~Silberschwert
+Das Silberschwert strahlt eine düstere Aura aus. Die Klinge ist so scharf, dass sie vermutlich den Kopf eines Gegners mit einem Hieb vom Leib trennen könnte.
+
+SPEZIFISCHE EIGENSCHAFTEN:
+
+Besondere Fähigkeiten: Bei einem Treffer stirbt das Opfer zu 25% augenblicklich, wenn ihm ein Rettungswurf -2 gegen Todesmagie misslingt.
+Wird ein Gedankenschinder oder ein Ulitharid getroffen, wird er sofort vernichtet.
+ETW0: -3, -4 (gg. Lykanthropen)
+Schaden: 1W10+3 (Klingenwaffe), 1W10+4 (gg. Lykanthropen)
+Gewicht: 15
+Initiativefaktor: 10
+Waffenfertigkeit: Zweihänder
+Waffentyp: Beidhändig
+Kann nicht verwendet werden von:
+Druiden
+Klerikern
+Magiern
+Dieben~

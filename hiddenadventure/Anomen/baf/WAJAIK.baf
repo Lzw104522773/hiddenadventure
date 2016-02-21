@@ -1,0 +1,17 @@
+IF
+	Global("WAMoirQ","Global",12)
+	Global("WAJaikFirstSpeak","Global",0)
+THEN
+	RESPONSE #100
+		SetGlobal("WAJaikFirstSpeak","Global",1)
+		StartDialogueNoSet("Saerk")
+END
+
+IF
+Global("WAMoirQ","Global",13)
+Global("WAJaikSecondSpeak","Global",0)
+THEN
+	RESPONSE #100
+		SetGlobal("WAJaikSecondSpeak","Global",1)
+		StartDialogueNoSet("Saerk")
+END
