@@ -1,6 +1,6 @@
 IF
-	PartyHasItem("DAGG09")
 	Global("WAIHaveDagger","GLOBAL",0)
+	PartyHasItem("DAGG09")
 THEN
 	RESPONSE #100
 		SetGlobal("WAIHaveDagger","GLOBAL",1)

@@ -17,10 +17,7 @@ END
 
 IF ~~ THEN BEGIN 2
 	SAY @3
-	IF ~~ THEN DO ~
-	EraseJournalEntry (@2006)
-	EraseJournalEntry (@2004)
-	~ SOLVED_JOURNAL @2005 GOTO 3
+	IF ~~ THEN DO ~EraseJournalEntry(@2006) EraseJournalEntry(@2004)~ SOLVED_JOURNAL @2005 GOTO 3
 END
 
 IF ~~ THEN BEGIN 3

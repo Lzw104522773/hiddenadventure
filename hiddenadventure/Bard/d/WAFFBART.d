@@ -7,8 +7,8 @@ APPEND FFBART
 		Global("MurdersSolved","GLOBAL",0)~ THEN REPLY #25619 DO ~SetGlobal("WABardforSH","Global",3)~ GOTO 2
 		IF ~~ THEN REPLY #25620 DO ~SetGlobal("WABardforSH","Global",3)~ GOTO 3
 		IF ~InPartySlot(LastTalkedToBy,0)
-		GlobalLT("chapter","GLOBAL",4)~ THEN REPLY #45792 DO ~SetGlobal("WABardforSH","Global",3)~ GOTO 11
-		IF ~GlobalLT("chapter","GLOBAL",4)~ THEN REPLY #45793 DO ~SetGlobal("WABardforSH","Global",3)~ GOTO 15
+		GlobalLT("chapter","GLOBAL",%bg2_chapter_4%)~ THEN REPLY #45792 DO ~SetGlobal("WABardforSH","Global",3)~ GOTO 11
+		IF ~GlobalLT("chapter","GLOBAL",%bg2_chapter_4%)~ THEN REPLY #45793 DO ~SetGlobal("WABardforSH","Global",3)~ GOTO 15
 		IF ~~ THEN REPLY #25621 DO ~SetGlobal("WABardforSH","Global",3)~ GOTO 4
 	END
 	
