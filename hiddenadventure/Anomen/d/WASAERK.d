@@ -1,12 +1,12 @@
 CHAIN
 IF WEIGHT #-999 ~Global("WAMoirQ","Global",10)~ THEN SAERK Saerk_AnomenCHAIN1
-@0
-== Surayah @1
+#25513 //@0
+== Surayah #25514 //@1
 == SAERK @2
 == Cor @3
 == ANOMENJ @4
-== Yusuf @5
-== Saerk @6
+== Yusuf #25523 //@5
+== Saerk #25524 //@6
 == Cor @7
 == Saerk @8
 END

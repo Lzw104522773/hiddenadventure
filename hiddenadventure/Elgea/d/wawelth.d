@@ -6,6 +6,7 @@ IF ~NumTimesTalkedTo(0)~ THEN BEGIN 0
 EscapeArea()~ EXIT
 END
 
+/*
 REPLACE ~Welther~ 
 IF ~~ THEN BEGIN 1 // from: 0.0
   SAY @1
@@ -13,3 +14,4 @@ IF ~~ THEN BEGIN 1 // from: 0.0
   IF ~~ THEN REPLY @3 DO ~GiveGoldForce(10000)~ GOTO 3
 END
 END
+*/

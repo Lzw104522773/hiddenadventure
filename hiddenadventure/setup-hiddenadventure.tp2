@@ -1,54 +1,75 @@
 BACKUP ~hiddenadventure/backup~
-AUTHOR ~whiteagnus@gmx.de~
-README ~hiddenadventure/hidden-adventure-german.html~
-VERSION ~ALPHA 8~
+//AUTHOR ~whiteagnus@gmx.de~
+SUPPORT ~jastey@web.de~
+README ~hiddenadventure/hidden-adventure-%LANGUAGE%.html~
+~hiddenadventure/hidden-adventure-english.html~
+VERSION ~beta2~
 
-AUTO_TRA "hiddenadventure/tra/%s"//%"
+AUTO_TRA ~hiddenadventure/tra/autotra/%s~
 
 ALWAYS
 
-INCLUDE ~hiddenadventure/lib/g3_bgt_cpmvars.tpa~
-INCLUDE ~hiddenadventure/lib/eet_cpmvars.tpa~
+/* continuous chapter for EET */
 
-ACTION_IF (GAME_IS ~eet~) AND (FILE_CONTAINS ~override/EET.flag~ ~EET_JOURNAL~) BEGIN
-  OUTER_SET bg2_chapter = 14
-END ELSE BEGIN
-  OUTER_SET bg2_chapter = 0
-END
-OUTER_FOR (i=1; i<=10; i=i+1) BEGIN
-  OUTER_SET bg2_chapter = bg2_chapter + 1
-  OUTER_SPRINT name_source ~bg2_chapter_%i%~
-  OUTER_SET EVAL ~%name_source%~ = bg2_chapter
+  ACTION_IF GAME_IS ~eet~ BEGIN
+    OUTER_SET bg2_chapter = 12
+  END ELSE BEGIN
+    OUTER_SET bg2_chapter = 0
+  END
+  OUTER_FOR (i=1; i<=10; i=i+1) BEGIN
+    OUTER_SET bg2_chapter = bg2_chapter + 1
+    OUTER_SPRINT name_source ~bg2_chapter_%i%~
+    OUTER_SET EVAL ~%name_source%~ = bg2_chapter
+  END
+
+ACTION_IF !FILE_EXISTS ~hiddenadventure/reinstall.mrk~ BEGIN
+
+/* Handling of correctly formatted tra-files!! ---------------------- */
+
+/*
+* Copies tra files into the autotra-folder (to leave the originals untouched)
+*/
+	DEFINE_ACTION_FUNCTION autotra_workaround BEGIN
+		COPY ~hiddenadventure/tra/german~ ~hiddenadventure/tra/autotra/%LANGUAGE%~
+		COPY ~hiddenadventure/tra/%LANGUAGE%~ ~hiddenadventure/tra/autotra/%LANGUAGE%~
+	END
+
+	LAF autotra_workaround END
+
+	ACTION_DEFINE_ARRAY tra#reload BEGIN setup END
+	ACTION_DEFINE_ARRAY tra#noconvert BEGIN END
+
+	LAF HANDLE_CHARSETS
+		INT_VAR
+			infer_charset = 1
+		STR_VAR
+			tra_path = EVAL ~hiddenadventure/tra/autotra~
+			noconvert_array = tra#noconvert
+			reload_array = tra#reload
+			iconv_path = ~hiddenadventure/tools/iconv~
+	END
+		
+		LOAD_TRA ~hiddenadventure/tra/autotra/%LANGUAGE%/setup.tra~
+		//LOAD_TRA ~hiddenadventure/tra/autotra/%LANGUAGE%/setup_ee.tra~
+		
+APPEND ~STATE.IDS~
+	~0x80101FEF CD_STATE_NOTVALID~
+UNLESS ~CD_STATE_NOTVALID~
+
+COPY ~hiddenadventure/component.xxx~ ~hiddenadventure/reinstall.mrk~
+
 END
 
-ACTION_IF ENGINE_IS ~bg2ee~ BEGIN
-    ACTION_DEFINE_ASSOCIATIVE_ARRAY charsetsTable BEGIN
-      "english" => "CP1252"
-      "french" => "CP1252"
-	  "german" => "CP1252"
-      "italian" => "CP1252"
-	  "polish" => "CP1250"
-      "russian" => "CP1251"
-      "spanish" => "CP1252"
-    END
-    ACTION_DEFINE_ARRAY charsetsReloadArray BEGIN setup END
-    LAF ~HANDLE_CHARSETS~
-      INT_VAR
-      infer_charsets = 0
-      STR_VAR
-      tra_path = EVAL "%MOD_FOLDER%/tra"
-      iconv_path = EVAL "%MOD_FOLDER%/tools/iconv" //available as part of the base system on OS X and GNU/Linux
-      charset_table = charsetsTable
-      reload_array = charsetsReloadArray
-    END
-	LOAD_TRA ~hiddenadventure/tra/%LANGUAGE%/setup-ee.tra~
-END
 
 END
 
 LANGUAGE ~German~
          ~German~
          ~hiddenadventure/tra/german/setup.tra~
+
+LANGUAGE ~English~
+         ~english~
+         ~hiddenadventure/tra/english/setup.tra~
 
 BEGIN @1001
 
@@ -67,49 +88,18 @@ EXTEND_BOTTOM ~%area_script%.bcs~ ~hiddenadventure/elgea/baf/wa0500.baf~
 
 COMPILE ~hiddenadventure/elgea/baf/WAWELTH.baf~
 
+/*
 COPY_EXISTING ~MISC5O.itm~ ~override~
 SAY DESC @1002
-
-BEGIN @2001
-REQUIRE_PREDICATE GAME_IS ~bgt eet~ @0
-
-ADD_JOURNAL @2004 @2005 @2006
-
-COPY ~hiddenadventure/farmer/cre/WAGHOUL.CRE~ ~override~
-SAY NAME1 @2002
-SAY NAME1 @2002
-
-COPY ~hiddenadventure/farmer/cre/WAFARM.CRE~ ~override~
-SAY NAME1 @2003
-SAY NAME1 @2003
-
-COMPILE ~hiddenadventure/farmer/dlg~ EVAL
-
-COPY_EXISTING ~%Beregost%.are~ ~override~
-  READ_ASCII 0x94 area_script
-  PATCH_IF (("%area_script%" STRING_COMPARE_CASE "")=0) BEGIN
-  	WRITE_ASCIIE 0x94 ~%Beregost_BCS%~ (8)
-  	READ_ASCII 0x94 area_script
-  END
-BUT_ONLY
-EXTEND_BOTTOM ~%area_script%.bcs~ ~hiddenadventure/farmer/baf/WA6700.baf~
-
-COPY_EXISTING ~%Beregost_House08%.are~ ~override~
-  READ_ASCII 0x94 area_script
-  PATCH_IF (("%area_script%" STRING_COMPARE_CASE "")=0) BEGIN
-  	WRITE_ASCIIE 0x94 ~%Beregost_House08_BCS%~ (8)
-  	READ_ASCII 0x94 area_script
-  END
-BUT_ONLY
-EXTEND_BOTTOM ~%area_script%.bcs~ ~hiddenadventure/farmer/baf/WA6755.baf~
+*/
 
 
 BEGIN @3001
 
+ADD_JOURNAL TITLE (@3031) @3015 @3016 @3017 @3018 @3019 @3020 @3021 @3022 @3023
+
 APPEND ~STATE.IDS~ ~0x80101FEF CD_STATE_NOTVALID~
 UNLESS ~CD_STATE_NOTVALID~
-
-ADD_JOURNAL @3015 @3016 @3017 @3018 @3019 @3020 @3021 @3022 @3023
 
 COMPILE ~hiddenadventure/anomen/d/WAPRELAT.d~
 COMPILE ~hiddenadventure/anomen/d/WAWISP.d~
@@ -462,10 +452,12 @@ COPY_EXISTING ~ARAM00.are~ ~override~
   	WRITE_ASCII 0x94 ARAM00 (8)
   	READ_ASCII 0x94 area_script
   END
-BUT_ONLY
+  BUT_ONLY
 EXTEND_TOP ~%area_script%.bcs~ ~hiddenadventure/SilverDagger/baf/WAAM00.baf~
-END ELSE ACTION_IF GAME_IS ~eet~ BEGIN
-EXTEND_TOP ~K#TELBGT.bcs~ ~hiddenadventure/SilverDagger/baf/WAAM00.baf~
+END 
+
+ACTION_IF GAME_IS ~eet~ BEGIN
+  EXTEND_TOP ~K#TELBGT.bcs~ ~hiddenadventure/SilverDagger/baf/WAAM00.baf~
 END
 
 COPY_EXISTING ~AR0603.are~ ~override~
@@ -489,28 +481,9 @@ COPY_EXISTING ~AR0523.are~ ~override~
   WRITE_BYTE 0x48 ("%flags%" BOR 0b10000000)
 BUT_ONLY_IF_IT_CHANGES
 
-BEGIN @9001
-REQUIRE_PREDICATE GAME_IS ~bgt eet~ @0
-
-ADD_JOURNAL @9003 @9004 @9005 @9006
-
-COPY ~hiddenadventure/Sylar/cre/WASYLAR.cre~ ~override~
-SAY NAME1 @9002
-SAY NAME2 @9002
-
-COPY_EXISTING ~%EBaldursGate_SilencesShop%.are~ ~override~
-  READ_ASCII 0x94 area_script
-  PATCH_IF (("%area_script%" STRING_COMPARE_CASE "")=0) BEGIN
-  	WRITE_ASCIIE 0x94 ~%EBaldursGate_SilencesShop_BCS%~ (8)
-  	READ_ASCII 0x94 area_script
-  END
-BUT_ONLY
-EXTEND_TOP ~%area_script%.bcs~ ~hiddenadventure/Sylar/baf/WA7809.baf~
-
-COMPILE ~hiddenadventure/Sylar/d~ EVAL
 
 BEGIN @100001
-COMPILE ~hiddenadventure/Bard/d~ EVAL
+COMPILE EVALUATE_BUFFER ~hiddenadventure/Bard/d~
 
 BEGIN @110001
 COPY ~hiddenadventure/silversword/eff/WAHIT1.EFF~ ~override~
@@ -563,3 +536,16 @@ LAUNCH_PATCH_FUNCTION ~ADD_ITEM_EFFECT~ INT_VAR
     type			= "99"
 END
 BUT_ONLY
+
+BEGIN @120000 /* ~Saradush tunnel~ */
+
+ADD_JOURNAL TITLE (@33) @16 @24 USING ~hiddenadventure/tra/autotra/%LANGUAGE%/saradush_tunnel.tra~
+
+COMPILE ~hiddenadventure/C#ToB\dialogue\saradush_tunnel.d~
+
+COPY ~hiddenadventure/C#ToB\itm\C#TOBSCR.itm~ ~override\C#TOBSCR.itm~
+  SAY NAME1 @120001 /* ~Information scroll~ */
+  SAY NAME2 @120001 /* ~Information scroll~ */
+  SAY UNIDENTIFIED_DESC @120002
+
+EXTEND_TOP ~SPSEQ12A.bcs~ ~hiddenadventure/C#ToB\scripts\SPSEQ12A_add.baf~

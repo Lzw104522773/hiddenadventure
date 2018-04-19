@@ -1,0 +1,68 @@
+/*
+@1002    = ~Two elaborately crafted pantaloons made of silver. These family pieces were used as ransom, paid by Welther for the release of Lady Elgea.~
+
+STATISTICS:
+
+Weight: 1~
+*/
+
+@3004	 = ~Dieses wertvolle Schmuckstück ist seit vielen Generationen im Besitz der Familie Delryn. Anomens Schwester Moira liebte es, diese Kette zu tragen, da es das letzte Geschenk ihrer Mutter an sie war.
+
+STATISTICS:
+
+Protection From Life Drain
+2 x Sunfire daily
+
+Weight: 1~
+
+@3010	 = ~Stanial and Ollik,
+
+Thanks to your shenanigans at the Delryn estate, it has become an unacceptable risk to have you there - but I can't just let you traipse around the city. There is no official witness, but I have to make sure nothing leads to me!
+I owe you for the services you have provided. I am generous... I have a place for you to lie low... I take care of those who work for me... rather than simply having them "disappear"...
+I have come to an arrangement with Renal Bloodscalp, I have rented a house in the Bridge District from him, near the Temple of Helm. One cannot enter there without the right... items. It should provide you with enough security. A "gift" from the Shadow Thieves.
+
+As long as you adhere to the following rules, you will not have any problems:
+1. Do not leave the house, before I give you instructions!
+2. Do not take anything from what is stored there - the Shadow Thieves do not brook fools!
+3. Do not, under any circumstance, enter the vault in the basement. Renal was quite adamant that no one have access - those who enter will regret it!
+
+If you follow these simple rules, you will remain safe.
+
+Saerk Farradh
+
+STATISTICS:
+
+Weight: 0~
+
+@3013	 = ~Most clubs are stout, hardwood sticks, narrow at the grip and wider at the end. This simple weapon has been used since people first began using tools. Anyone can find a good stout piece of wood and swing it; hence the club's widespread use. This particular club has been magically enhanced.
+
+STATISTICS:
+
+THAC0: +1
+Damage: 1d6+1 (crushing)
+Speed Factor: 4
+Proficiency Type: Club
+Type: One-handed
+Requires:
+ 5 Strength
+
+Weight: 3~
+
+@110002   = ~This vorpal Silver Sword radiates a dark aura when you examine it, and the blade is so finely sharpened it could likely sever a head in a single blow.
+
+
+STATISTICS:
+
+Combat abilities:
+– 25% chance per hit that target must save vs. Death at -2 or die
+- If the target is a Mind Flayer or an Ulitharid, it is killed immediately.
+
+THAC0: +3
+Damage: 1d10+3 (slashing)
+Speed Factor: 10
+Proficiency Type: Two-handed Sword
+Type: Two-handed
+Requires:
+ 14 Strength
+
+Weight: 15~

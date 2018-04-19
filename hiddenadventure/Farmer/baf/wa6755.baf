@@ -1,8 +1,0 @@
-IF
-	Global("WAFARM1","Global",1)
-	!Global("waspwn2","Global",1)
-THEN
-	RESPONSE #100
-		SetGlobal("waspwn2","Global",1)
-		CreateCreature("wafarm",[437.243],0) 
-END

@@ -1,0 +1,19 @@
+@0    = ~You... are back, I see. Were you successful in your investigation?~
+@1    = ~No, we are still on it.~
+@2    = ~Indeed, Captain. We have taken care of the murderers and found this document on one. It gives prove that Saerk Farradh had dealings with the Shadow Thieves!~
+@3    = ~Well done! That's exactly the proof I need! I guess we can go and have a nice little chat with Mr. Saerk now! Ha! Here, a reward you've honestly earned!~
+@4    = ~Finally we can... What is it now?!~
+@5    = ~Sir Anomen! Thank the gods I've found you!~
+@6    = ~I know you, you were the one who told me about Moira's death! Why were you looking for me?~
+@7    = ~Your father... he took it upon himself to break into Farradh's estate. He is mad! He said he will have his revenge!~
+@8    = ~Oh gods! That cannot be! Saerk has many guards! For-forgive me, <CHARNAME>, but I have to keep my father from doing something stupid!~
+@9    = ~That young man is about to make a great mistake! Make haste, follow him to Saerk's estate and keep an eye on him! I feel he might not be up to the trouble that is awaiting him there!~
+@10   = ~Do not worry, I'll prevent Anomen from doing anything he'll regret!~
+@11   = ~Anomen would not want me to interfere in his personal family stuff.~
+@12   = ~What do I care? Anomen has his sister's killers. It's his father's own fault if he does stupid things.~
+@13   = ~I would not go by what he might want, but what is good for him – and fighting against a squad of house guards together with one drunken fool surely isn't!~
+/* @14   */
+/* @15   */
+@16   = ~This is no longer a problem of mine. The case is solved, I have the reward. I did everything I could. Farewell, Captain.~
+@17   = ~Is that so? Does it not bother you that your friend is drawn into the follies of his father? What if he decides to kill Saerk? He will have to answer before the magistrate... if he survives. I would have to arrest him if he does something stupid.~
+/* @18  */

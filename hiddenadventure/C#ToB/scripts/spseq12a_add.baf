@@ -1,0 +1,9 @@
+/* append to SPSEQ12A.bcs */
+
+IF 
+	Global("C#ToB_SaradushScrollSpawn","LOCALS",0)
+THEN 
+RESPONSE #100
+	GiveItemCreate("C#TOBSCR","yssold14",1,0,0)
+	SetGlobal("C#ToB_SaradushScrollSpawn","LOCALS",1)
+END

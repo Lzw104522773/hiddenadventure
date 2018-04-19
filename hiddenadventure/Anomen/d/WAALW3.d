@@ -48,9 +48,9 @@ CHAIN
 IF ~~ THEN WAALW WAALW03_4
 @13
 END
-++ @14 DO ~AddJournalEntry(@3021,QUEST)
+++ @10 DO ~AddJournalEntry(@3021,QUEST)
 SetGlobal("WAMoirQ","Global",10)~ EXIT
-++ @15 GOTO WAALW03_5
+++ @12 GOTO WAALW03_5
 ++ @16  DO ~AddJournalEntry(@3022,QUEST_DONE)
 EraseJournalEntry(@3015)
 EraseJournalEntry(@3016)
@@ -65,9 +65,9 @@ CHAIN
 IF ~~ THEN WAALW WAALW03_5
 @17
 END
-++ @14 DO ~AddJournalEntry(@3021,QUEST)
+++ @10 DO ~AddJournalEntry(@3021,QUEST)
 SetGlobal("WAMoirQ","Global",10)~ EXIT
-++ @18 DO ~AddJournalEntry(@3022,QUEST_DONE)
+++ @16 DO ~AddJournalEntry(@3022,QUEST_DONE)
 EraseJournalEntry(@3015)
 EraseJournalEntry(@3016)
 EraseJournalEntry(@3017)
