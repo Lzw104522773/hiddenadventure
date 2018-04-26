@@ -1,9 +1,14 @@
+/*
+
+
+*/
+
 BACKUP ~hiddenadventure/backup~
 //AUTHOR ~whiteagnus@gmx.de~
 SUPPORT ~jastey@web.de~
 README ~hiddenadventure/hidden-adventure-%LANGUAGE%.html~
 ~hiddenadventure/hidden-adventure-english.html~
-VERSION ~beta2~
+VERSION ~beta_3~ //180426
 
 AUTO_TRA ~hiddenadventure/tra/autotra/%s~
 
@@ -549,3 +554,67 @@ COPY ~hiddenadventure/C#ToB\itm\C#TOBSCR.itm~ ~override\C#TOBSCR.itm~
   SAY UNIDENTIFIED_DESC @120002
 
 EXTEND_TOP ~SPSEQ12A.bcs~ ~hiddenadventure/C#ToB\scripts\SPSEQ12A_add.baf~
+
+
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+//Tempel des Mask 
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+
+BEGIN @120003  /* Tempel des Mask im Hafenviertel */
+COMPILE ~hiddenadventure/masktemple/RRSPMASK.D~
+
+COPY ~hiddenadventure/masktemple/RRSPMASK.CRE~ ~override~
+COPY ~hiddenadventure/masktemple/RRSPMASK.STO~ ~override~
+SAY 0xc ~Haus des Schattens~
+
+/* add travel region */
+COPY_EXISTING ~AR0300.are~ ~override~ 
+  LAUNCH_PATCH_FUNCTION  ~fj_are_structure~
+    INT_VAR
+    fj_type         = 2    //travel
+    fj_box_left     = 959  //kleinstes x
+    fj_box_top      = 1333  //kleinstes y
+    fj_box_right    = 1005  //größtes x
+    fj_box_bottom   = 1428   //größtes y
+    fj_cursor_idx   = 30   //door
+    fj_vertex_0     = 982 + (1428 << 16)   
+    fj_vertex_1     = 959 + (1420 << 16)   
+    fj_vertex_2     = 965 + (1386 << 16)   
+    fj_vertex_3     = 980 + (1359 << 16)   
+    fj_vertex_4     = 990 + (1341 << 16) 
+    fj_vertex_5     = 1000 + (1333 << 16)  
+    fj_vertex_6     = 1005 + (1343 << 16) 
+    fj_vertex_7     = 1005 + (1390 << 16) 
+    fj_vertex_8     = 982 + (1428 << 16)       
+    STR_VAR
+    fj_structure_type   = region
+    fj_name             = DOORJA#D00
+    fj_destination_area = JA#D00
+    fj_destination_name = FROM0300
+  END
+
+/* add entrance from JA#D00 to AR0300.are */
+  LAUNCH_PATCH_FUNCTION  ~fj_are_structure~
+    INT_VAR
+    fj_loc_x       = 1054    //x
+    fj_loc_y       = 1427   //y
+    fj_orientation = 13   //
+    STR_VAR
+    fj_structure_type = entrance
+    fj_name           = FRJA#D00
+  END
+
+/* add map point */
+  ADD_MAP_NOTE #984 #1341 ~gray~
+  @120005
+
+BUT_ONLY
+
+
+COPY ~hiddenadventure/masktemple/area~ ~override~
+COPY_EXISTING ~JA#D00.are~ ~override~
+SAY 0x354 @120004
+COPY_EXISTING ~FLAME2S.BAM~ ~override~
+
