@@ -14,7 +14,7 @@ IF ~Global("WAMoirQ","Global",12)~ THEN WAJAIK Jaiken_AnomenCHAIN1
 == Cor @9
 == WAJAIK @10
 == Cor @11
-== ANOMENJ @12
+== ANOMENP @12
 == Cor @13
 END
 IF ~~ THEN DO ~SetGlobal("WAMoirQ","Global",13)

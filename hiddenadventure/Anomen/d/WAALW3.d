@@ -3,7 +3,7 @@ APPEND WAALW
 IF ~Global("WAMoirQ","Global",8)~ THEN BEGIN WAALW03_1
 SAY @0
 ++ @1 EXIT
-++ @2 DO ~TakePartyItem("WASTANS")~ GOTO WAALW03_2
++ ~PartyHasItem("WASTANS")~ + @2 DO ~TakePartyItem("WASTANS")~ GOTO WAALW03_2
 END
 
 IF ~~ THEN WAALW03_2
@@ -23,7 +23,8 @@ END
 END
 
 CHAIN
-IF ~Global("WAMoirQ","Global",8)~ THEN TERL Anomen_TerlCHAIN1
+IF WEIGHT #-1
+~Global("WAMoirQ","Global",8)~ THEN TERL Anomen_TerlCHAIN1
 @5
 == ANOMENJ @6
 == TERL @7
@@ -36,11 +37,11 @@ StartCutScene("WACTERL2")~ EXIT
 
 
 CHAIN
-IF ~Global("WAMoirQ","Global",9)~ THEN WAALW WAALW03Chain_01
+IF WEIGHT #-1
+~Global("WAMoirQ","Global",9)~ THEN WAALW WAALW03Chain_01
 @9
 END
-++ @10 DO ~AddJournalEntry(@3021,QUEST)
-SetGlobal("WAMoirQ","Global",10)~ EXIT
+++ @10 GOTO WAALW03_6 
 ++ @11 GOTO WAALW03_4
 ++ @12 GOTO WAALW03_5
 
@@ -48,8 +49,7 @@ CHAIN
 IF ~~ THEN WAALW WAALW03_4
 @13
 END
-++ @10 DO ~AddJournalEntry(@3021,QUEST)
-SetGlobal("WAMoirQ","Global",10)~ EXIT
+++ @10 GOTO WAALW03_6 
 ++ @12 GOTO WAALW03_5
 ++ @16  DO ~AddJournalEntry(@3022,QUEST_DONE)
 EraseJournalEntry(@3015)
@@ -65,8 +65,7 @@ CHAIN
 IF ~~ THEN WAALW WAALW03_5
 @17
 END
-++ @10 DO ~AddJournalEntry(@3021,QUEST)
-SetGlobal("WAMoirQ","Global",10)~ EXIT
+++ @10 GOTO WAALW03_6
 ++ @16 DO ~AddJournalEntry(@3022,QUEST_DONE)
 EraseJournalEntry(@3015)
 EraseJournalEntry(@3016)
@@ -76,6 +75,13 @@ EraseJournalEntry(@3019)
 EraseJournalEntry(@3020)
 EraseJournalEntry(@3021)
 SetGlobal("WAMoirQ","Global",99)~ EXIT
+
+CHAIN
+IF ~~ THEN WAALW WAALW03_6
+@19
+END
+IF ~~ THEN DO ~AddJournalEntry(@3021,QUEST)
+SetGlobal("WAMoirQ","Global",10)~ EXIT
 
 
 

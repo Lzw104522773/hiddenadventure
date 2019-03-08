@@ -9,20 +9,15 @@ See("Anomen")
 == ANOMENJ @1
 == WAALW @2
 END
-IF ~InParty("Keldorn")
-InParty("C#Ajantis")
-See("Keldorn")
-!StateCheck("Keldorn",CD_STATE_NOTVALID)~ EXTERN KELDORJ Keldorn_AlweskChain01
-IF ~InParty("Keldorn")
-See("Keldorn")
-!StateCheck("Keldorn",CD_STATE_NOTVALID)
-!InParty("C#Ajantis")~ EXTERN KELDORJ Keldorn_AlweskChain01
-IF ~!InParty("Keldorn")
-InParty("C#Ajantis")
+
+IF ~~ EXTERN ANOMENJ Anomen_AlweskChain02
+IF ~InParty("C#Ajantis")
 See("C#Ajantis")
 !StateCheck("C#Ajantis",CD_STATE_NOTVALID)~ EXTERN C#AJANJ Ajantis_AlweskChain01
-IF ~!InParty("Keldorn")
-!InParty("C#Ajantis")~ EXTERN ANOMENJ Anomen_AlweskChain02
+IF ~InParty("Keldorn")
+See("Keldorn")
+!StateCheck("Keldorn",CD_STATE_NOTVALID)~ EXTERN KELDORJ Keldorn_AlweskChain01
+
 CHAIN
 IF ~~ THEN KELDORJ Keldorn_AlweskChain01
 @3
@@ -30,10 +25,12 @@ IF ~~ THEN KELDORJ Keldorn_AlweskChain01
 == KELDORJ @5
 == WAALW @6
 END
+IF ~~ EXTERN ANOMENJ Anomen_AlweskChain02
 IF ~InParty("C#Ajantis")
 See("C#Ajantis")
 !StateCheck("C#Ajantis",CD_STATE_NOTVALID)~ EXTERN C#AJANJ Ajantis_AlweskChain01
-IF ~!InParty("C#Ajantis")~ EXTERN ANOMENJ Anomen_AlweskChain02
+
+
 CHAIN
 IF ~~ THEN ANOMENJ Anomen_AlweskChain02
 @7

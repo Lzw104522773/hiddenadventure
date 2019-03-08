@@ -1,46 +1,59 @@
+/*
 ADD_TRANS_TRIGGER WWENCH 0 ~OR(2)
 !InParty("Anomen")
 !Global("WARebAbA","Global",1)~ DO 0
+*/
+
 EXTEND_BOTTOM WWENCH 0
 IF ~InParty("Anomen")
 See("Anomen")
 !StateCheck("Anomen",CD_STATE_NOTVALID)
 !Global("WARebAbA","Global",1)
 !GlobalGT("WAMoirQ","Global",1)~ THEN EXTERN ANOMENJ Anomen_RebeccaCHAIN1 
+/*
 IF ~InParty("Anomen")
 See("Anomen")
 !StateCheck("Anomen",CD_STATE_NOTVALID)
 Global("WARebAbA","Global",1)~ THEN EXIT
+*/
 END
 
+/*
 ADD_TRANS_TRIGGER WWENCH 1 ~OR(2)
 !InParty("Anomen")
 !Global("WARebAbA","Global",1)~ DO 0
+*/
 EXTEND_BOTTOM WWENCH 1
 IF ~InParty("Anomen")
 See("Anomen")
 !StateCheck("Anomen",CD_STATE_NOTVALID)
 !Global("WARebAbA","Global",1)
 !GlobalGT("WAMoirQ","Global",1)~ THEN EXTERN ANOMENJ Anomen_RebeccaCHAIN1 
+/*
 IF ~InParty("Anomen")
 See("Anomen")
 !StateCheck("Anomen",CD_STATE_NOTVALID)
 Global("WARebAbA","Global",1)~ THEN EXIT
+*/
 END
 
+/*
 ADD_TRANS_TRIGGER WWENCH 2 ~OR(2)
 !InParty("Anomen")
 !Global("WARebAbA","Global",1)~ DO 0
+*/
 EXTEND_BOTTOM WWENCH 2
 IF ~InParty("Anomen")
 See("Anomen")
 !StateCheck("Anomen",CD_STATE_NOTVALID)
 !Global("WARebAbA","Global",1)
 !GlobalGT("WAMoirQ","Global",1)~ THEN EXTERN ANOMENJ Anomen_RebeccaCHAIN1 
+/*
 IF ~InParty("Anomen")
 See("Anomen")
 !StateCheck("Anomen",CD_STATE_NOTVALID)
 Global("WARebAbA","Global",1)~ THEN EXIT
+*/
 END
 
 CHAIN

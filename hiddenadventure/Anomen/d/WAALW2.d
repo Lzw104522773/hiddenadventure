@@ -30,9 +30,13 @@ IF ~~ THEN ANOMENJ Anomen_AlweskCHAIN2_1_3
 END
 IF ~InParty("Korgan")
 See("Korgan")
-!StateCheck("O#Korgan",CD_STATE_NOTVALID)~ THEN DO ~SetGlobal("WAMoirQ","Global",6)~ EXTERN KORGANJ Korgan_AlweskCHAIN1
-IF ~!InParty("Korgan")~ THEN DO ~AddJournalEntry(@3017,QUEST)
+!StateCheck("Korgan",CD_STATE_NOTVALID)~ THEN DO ~SetGlobal("WAMoirQ","Global",6)~ EXTERN KORGANJ Korgan_AlweskCHAIN1
+IF ~OR(3)
+!InParty("Korgan")
+!See("Korgan")
+StateCheck("Korgan",CD_STATE_NOTVALID)~ THEN DO ~AddJournalEntry(@3017,QUEST)
 SetGlobal("WAMoirQ","Global",6)~ EXIT
+
 CHAIN
 IF ~~ THEN KORGANJ Korgan_AlweskCHAIN1
 @15

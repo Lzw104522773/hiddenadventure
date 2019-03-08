@@ -1,3 +1,4 @@
+/*
 IF
 	Global("WAAGARM","Global",0)
 	PartyHasItem("ANOPLAT")
@@ -6,6 +7,7 @@ THEN
 		SetGlobal("WAAGARM","Global",1)
 		ApplySpellRES("waanopla",Myself)
 END
+*/
 
 IF
 	Global("WAMoirQ","Global",16)
@@ -19,6 +21,7 @@ THEN
 		ActionOverride("wamess",StartDialogueNoSet("Anomen"))
 END
 
+/*
 IF
 	Global("WAAGSHL","Global",0)
 	PartyHasItem("NPSHLD")
@@ -56,3 +59,4 @@ THEN
 		SetGlobal("WAAGHLM2","Global",1)
 		ApplySpellRES("waanohlm",Myself)
 END
+*/

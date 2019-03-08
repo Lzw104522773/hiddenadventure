@@ -15,12 +15,13 @@ Dead("wasguar6")~ THEN Yusuf Yusuf_AnomenCHAIN1
 == Yusuf @6
 == Surayah @7
 == Yusuf @8
-== ANOMENJ @9
+== ANOMENP @9
 == Cor @10
 == Yusuf @11
 END
 ++ @12 EXTERN Yusuf Yusuf_AnomenCHAIN2
 ++ @13 EXTERN Yusuf Yusuf_AnomenCHAIN2
+
 CHAIN
 IF ~~ THEN  Yusuf Yusuf_AnomenCHAIN2
 @14

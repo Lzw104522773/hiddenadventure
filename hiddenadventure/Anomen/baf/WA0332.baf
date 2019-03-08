@@ -1,4 +1,14 @@
 IF
+	Global("WAMoirQ","Global",9)
+	Global("WAAlweskEnd","Global",0)
+THEN
+	RESPONSE #100
+		SetGlobal("WAAlweskEnd","Global",1)
+		ActionOverride("WAALW",StartDialogueNoSet(Player1))
+		Continue()
+END
+
+IF
 	Global("WAMoirQ","Global",4)
 	Global("WAALWSpawn","Global",0)
 THEN
@@ -20,11 +30,4 @@ THEN
 		Continue()
 END
 
-IF
-	Global("WAMoirQ","Global",9)
-	Global("WAAlweskEnd","Global",0)
-THEN
-	RESPONSE #100
-		SetGlobal("WAAlweskEnd","Global",1)
-		ActionOverride("WAALW",StartDialogueNoSet(Player1))
-END
+

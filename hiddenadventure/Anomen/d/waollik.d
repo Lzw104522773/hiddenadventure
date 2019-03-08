@@ -14,10 +14,11 @@ IF ~NumTimesTalkedTo(0)~ THEN WASTAN Ollik_StanialCHAIN1
 == WASTAN @7
 == ANOMENJ @8
 END
+IF ~~ THEN EXTERN WAOLLIK Ollik_StanialCHAIN2
 IF ~InParty("Viconia")
 See("Viconia")
 !StateCheck("Viconia",CD_STATE_NOTVALID)~ THEN EXTERN VICONIJ Viconia_StanialCHAIN1
-IF ~!InParty("Viconia")~ THEN EXTERN WAOLLIK Ollik_StanialCHAIN2
+
 CHAIN
 IF ~~ THEN VICONIJ Viconia_StanialCHAIN1
 @9

@@ -1,14 +1,9 @@
-/*
-
-
-*/
-
 BACKUP ~hiddenadventure/backup~
 //AUTHOR ~whiteagnus@gmx.de~
 SUPPORT ~jastey@web.de~
 README ~hiddenadventure/hidden-adventure-%LANGUAGE%.html~
 ~hiddenadventure/hidden-adventure-english.html~
-VERSION ~beta_3~ //180426
+VERSION ~beta_4~ //190308
 
 AUTO_TRA ~hiddenadventure/tra/autotra/%s~
 
@@ -147,7 +142,7 @@ SAY NAME2 @3006
 COPY_EXISTING ~AR0332.are~ ~override~
   READ_ASCII 0x94 area_script
   PATCH_IF (("%area_script%" STRING_COMPARE_CASE "")=0) BEGIN
-  	WRITE_ASCII 0x94 AR0322 (8)
+  	WRITE_ASCII 0x94 AR0332 (8)
   	READ_ASCII 0x94 area_script
   END
 BUT_ONLY
@@ -306,6 +301,7 @@ COMPILE ~hiddenadventure/anomen/baf/WASJAIK2.baf~
 COMPILE ~hiddenadventure/anomen/d/WAJAIK2.d~
 COMPILE ~hiddenadventure/anomen/d/WASURY.d~
 COMPILE ~hiddenadventure/anomen/d/WAAnAfter.d~
+COMPILE ~hiddenadventure/anomen/d/WAAnoP.d~
 
 COPY_EXISTING ~sguard1.cre~ ~override/waguard1.cre~
 			  ~sguard2.cre~ ~override/waguard2.cre~
@@ -343,6 +339,7 @@ COPY ~hiddenadventure/anomen/itm/wabag06.itm~ ~override~
 
 ACTION_IF FILE_EXISTS_IN_GAME ~ANOPLAT.itm~ BEGIN
 
+/*
 	COPY_EXISTING ~ANOPLAT.itm~ ~override~
 		WRITE_BYTE 0x1e 227
 	BUT_ONLY
@@ -354,6 +351,7 @@ ACTION_IF FILE_EXISTS_IN_GAME ~ANOPLAT.itm~ BEGIN
 	COPY_EXISTING ~ANOHELM.itm~ ~override~
 		WRITE_BYTE 0x1e 227
 	BUT_ONLY
+*/
 	
 	EXTEND_BOTTOM ~ANOMEN.bcs~ ~hiddenadventure/anomen/cross/baf/waanom.baf~
 	
@@ -614,6 +612,17 @@ BUT_ONLY
 
 
 COPY ~hiddenadventure/masktemple/area~ ~override~
+
+ACTION_IF GAME_IS ~bgt tob~ THEN BEGIN
+  COPY ~hiddenadventure/masktemple/area/tis_v1~ ~override~
+END
+
+ACTION_IF GAME_IS ~bg2ee eet~ THEN BEGIN
+  COPY ~hiddenadventure/masktemple/area/pvrz~ ~override~
+END
+
+
+
 COPY_EXISTING ~JA#D00.are~ ~override~
 SAY 0x354 @120004
 COPY_EXISTING ~FLAME2S.BAM~ ~override~
