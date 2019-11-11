@@ -2,7 +2,9 @@
 ----------
 
 Author: Lumorus, jastey
+
 Coder: White Agnus, jastey
+
 Area graphics: Jarl
 
 Hidden Adventures is a Quest/Tweak Mod for Baldur's Gate 2 (BGII, BGT, BGII:EE, EET). It adds little quests and tweaks in optional components.
