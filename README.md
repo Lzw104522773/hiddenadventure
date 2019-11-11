@@ -1,4 +1,5 @@
 -- Hidden Adventures --
+----------
 
 Author: Lumorus, jastey
 Coder: White Agnus, jastey
@@ -7,8 +8,8 @@ Area graphics: Jarl
 Hidden Adventures is a Quest/Tweak Mod for Baldur's Gate 2 (BGII, BGT, BGII:EE, EET). It adds little quests and tweaks in optional components.
 
 
-Content
-----------
+Content:
+
 Lady Elgea's extended plot (QUEST EXPANSION):
 
 Lady Elgea's ransom quest is extended, so that also good parties have the chance to get the Silver Pantaloons. After letting Lady Elgea go, Welther will approach the PC and hand over the very special item out of gratitude!
