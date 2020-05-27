@@ -1,9 +1,9 @@
 BACKUP ~hiddenadventure/backup~
 //AUTHOR ~whiteagnus@gmx.de~
-SUPPORT ~jastey@web.de~
+SUPPORT ~Please post at G3 or Kerzenburgforum, refer to readme.~
 README ~hiddenadventure/hidden-adventure-%LANGUAGE%.html~
 ~hiddenadventure/hidden-adventure-english.html~
-VERSION ~beta_4~ //190308
+VERSION ~Beta_5~ 
 
 AUTO_TRA ~hiddenadventure/tra/autotra/%s~
 
@@ -41,7 +41,7 @@ ACTION_IF !FILE_EXISTS ~hiddenadventure/reinstall.mrk~ BEGIN
 
 	LAF HANDLE_CHARSETS
 		INT_VAR
-			infer_charset = 1
+			infer_charsets = 1
 		STR_VAR
 			tra_path = EVAL ~hiddenadventure/tra/autotra~
 			noconvert_array = tra#noconvert
@@ -71,6 +71,9 @@ LANGUAGE ~English~
          ~english~
          ~hiddenadventure/tra/english/setup.tra~
 
+////////////////////////////////////////////////
+//  ~Lady Elgea's extended plot~
+///////////////////////////////////////////////
 BEGIN @1001
 
 COPY ~hiddenadventure/elgea/cre/WAWELTH.cre~ ~override~
@@ -93,7 +96,9 @@ COPY_EXISTING ~MISC5O.itm~ ~override~
 SAY DESC @1002
 */
 
-
+////////////////////////////////////////////////
+//  ~Anomen's extended plot~
+///////////////////////////////////////////////
 BEGIN @3001
 
 ADD_JOURNAL TITLE (@3031) @3015 @3016 @3017 @3018 @3019 @3020 @3021 @3022 @3023
@@ -300,7 +305,7 @@ COMPILE ~hiddenadventure/anomen/baf/WAJAIK.baf~
 COMPILE ~hiddenadventure/anomen/baf/WASJAIK2.baf~
 COMPILE ~hiddenadventure/anomen/d/WAJAIK2.d~
 COMPILE ~hiddenadventure/anomen/d/WASURY.d~
-COMPILE ~hiddenadventure/anomen/d/WAAnAfter.d~
+//COMPILE ~hiddenadventure/anomen/d/WAAnAfter.d~
 COMPILE ~hiddenadventure/anomen/d/WAAnoP.d~
 
 COPY_EXISTING ~sguard1.cre~ ~override/waguard1.cre~
@@ -354,7 +359,8 @@ ACTION_IF FILE_EXISTS_IN_GAME ~ANOPLAT.itm~ BEGIN
 */
 	
 	EXTEND_BOTTOM ~ANOMEN.bcs~ ~hiddenadventure/anomen/cross/baf/waanom.baf~
-	
+
+/*	
 	COPY ~hiddenadventure/anomen/cross/spl/waanopla.spl~ ~override~
 	SAY 0x9e @3027
 	BUT_ONLY
@@ -366,6 +372,7 @@ ACTION_IF FILE_EXISTS_IN_GAME ~ANOPLAT.itm~ BEGIN
 	COPY ~hiddenadventure/anomen/cross/spl/waanoshl.spl~ ~override~
 	SAY 0x9e @3030
 	BUT_ONLY
+*/
 	
 	COPY ~hiddenadventure/anomen/cross/cre/wamess.cre~ ~override~
 	SAY NAME1 @3028
@@ -405,6 +412,9 @@ ACTION_IF FILE_EXISTS_IN_GAME ~ANOPLAT.itm~ BEGIN
 	
 END
 
+////////////////////////////////////////////////
+//  ~Jerlia's Ore Shop~
+///////////////////////////////////////////////
 BEGIN @4001
 COMPILE ~hiddenadventure/Jerlia/d/WAJERL.d~
 
@@ -424,12 +434,18 @@ EXTEND_BOTTOM ~%area_script%.bcs~ ~hiddenadventure/Jerlia/baf/WA0700.baf~
 
 COPY_EXISTING ~MISC5K.itm~ ~override~
 
+////////////////////////////////////////////////
+//  ~Elven holy water in the Temple of Lathander~
+///////////////////////////////////////////////
 BEGIN @5001
 
 COPY_EXISTING ~TEMLATH.sto~ ~override~
 ADD_STORE_ITEM ~MISCAU~ #1 #0 #0 ~IDENTIFIED~ #1 ~UNLIMITED~
 BUT_ONLY
 
+////////////////////////////////////////////////
+//  ~Wave Blade in Treasury~
+///////////////////////////////////////////////
 BEGIN @6001
 
 COPY_EXISTING ~SAHPR2.cre~ ~override~
@@ -445,6 +461,9 @@ COPY_EXISTING ~AR2300.are~ ~override~
 BUT_ONLY
 EXTEND_TOP ~%area_script%.bcs~ ~hiddenadventure/WaveBlade/baf/wa2300.baf~
 
+////////////////////////////////////////////////
+//  ~Silver Dagger in Irenicus Dungeon~
+///////////////////////////////////////////////
 BEGIN @7001
 REQUIRE_PREDICATE GAME_IS ~bgt eet~ @0
 
@@ -472,6 +491,9 @@ COPY_EXISTING ~AR0603.are~ ~override~
 BUT_ONLY
 EXTEND_TOP ~%area_script%.bcs~ ~hiddenadventure/SilverDagger/baf/WA0603.baf~
 
+////////////////////////////////////////////////
+//  ~Bards can spend the night at their stronghold (Five Flagons)~
+///////////////////////////////////////////////
 BEGIN @8001
 
 COPY_EXISTING ~AR0522.are~ ~override~
@@ -484,10 +506,15 @@ COPY_EXISTING ~AR0523.are~ ~override~
   WRITE_BYTE 0x48 ("%flags%" BOR 0b10000000)
 BUT_ONLY_IF_IT_CHANGES
 
-
+////////////////////////////////////////////////
+//  ~A bard for the bard stronghold~
+///////////////////////////////////////////////
 BEGIN @100001
 COMPILE EVALUATE_BUFFER ~hiddenadventure/Bard/d~
 
+////////////////////////////////////////////////
+//  ~Silver Sword~
+///////////////////////////////////////////////
 BEGIN @110001
 COPY ~hiddenadventure/silversword/eff/WAHIT1.EFF~ ~override~
 COPY ~hiddenadventure/silversword/eff/WADAM1.EFF~ ~override~
@@ -540,7 +567,10 @@ LAUNCH_PATCH_FUNCTION ~ADD_ITEM_EFFECT~ INT_VAR
 END
 BUT_ONLY
 
-BEGIN @120000 /* ~Saradush tunnel~ */
+////////////////////////////////////////////////
+//  ~A Tunnel for Saradush~
+///////////////////////////////////////////////
+BEGIN @120000 /* ~A Tunnel for Saradush~ */
 
 ADD_JOURNAL TITLE (@33) @16 @24 USING ~hiddenadventure/tra/autotra/%LANGUAGE%/saradush_tunnel.tra~
 
@@ -554,12 +584,9 @@ COPY ~hiddenadventure/C#ToB\itm\C#TOBSCR.itm~ ~override\C#TOBSCR.itm~
 EXTEND_TOP ~SPSEQ12A.bcs~ ~hiddenadventure/C#ToB\scripts\SPSEQ12A_add.baf~
 
 
-////////////////////////////////////////////////////////////////////////////
-////////////////////////////////////////////////////////////////////////////
-//Tempel des Mask 
-////////////////////////////////////////////////////////////////////////////
-////////////////////////////////////////////////////////////////////////////
-
+////////////////////////////////////////////////
+//  ~Temple of Mask in Docks District~
+///////////////////////////////////////////////
 BEGIN @120003  /* Tempel des Mask im Hafenviertel */
 COMPILE ~hiddenadventure/masktemple/RRSPMASK.D~
 
