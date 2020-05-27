@@ -28,18 +28,18 @@ IF ~InParty("HaerDalis")
 See("HaerDalis")
 !StateCheck("HaerDalis",CD_STATE_NOTVALID)~ THEN EXTERN HAERDAJ HaerDalis_SurayahENDCHAIN1
 IF ~OR(3) !InParty("HaerDalis") !See("HaerDalis")
-StateCheck("HaerDalis",CD_STATE_NOTVALID)~ THEN EXTERN Surayah Surayah_AnomenENDCHAIN3
+StateCheck("HaerDalis",CD_STATE_NOTVALID)~ THEN EXTERN ANOMENJ Surayah_AnomenENDCHAIN3
 
 CHAIN
 IF ~~ THEN HAERDAJ HaerDalis_SurayahENDCHAIN1
 @6
+== Surayah @7
 END
-IF ~~ THEN EXTERN Surayah Surayah_AnomenENDCHAIN3
+IF ~~ THEN EXTERN ANOMENJ Surayah_AnomenENDCHAIN3
 
 CHAIN
-IF ~~ THEN Surayah Surayah_AnomenENDCHAIN3
-@7
-== ANOMENJ @8
+IF ~~ THEN ANOMENJ Surayah_AnomenENDCHAIN3
+@8
 == Surayah @9
 = @10
 END
