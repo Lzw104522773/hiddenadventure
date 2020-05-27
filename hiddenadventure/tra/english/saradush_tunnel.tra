@@ -1,38 +1,38 @@
 @0    = ~The tunnel was all open and protected, if that is your question. I would say we saved quite a few people's lives! I was still trying to decide what to take with me and what to leave behind, and whether I want to flee at all, when Yaga-Shura's army marched into the city.~
-@1    = ~Let me put it plainly: I want to help the people of Saradush escape the siege. I have powers to leave the city, but it seems I cannot take anyone with me. The city mage and defense is too busy to talk to me. What can we do?~
+@1    = ~Let me put it plainly: I want to help the people of Saradush escape the siege. I have powers to leave the city, but it seems I cannot take anyone with me. The City Guard mage is too busy to talk to me. Is there anything we can do?~
 @2    = ~Just a question. Why don't you people just try to escape the siege, maybe through a tunnel that leads sufficiently far away to go past Yaga-Shura's army?~
 @3    = ~You mentioned a magical barrier surrounding Saradush?~
 @4    = ~This scroll I found on one of Yaga-Shura's mages. It seems to say something about the barrier that surrounds Saradush.~
-@5    = ~I encountered Yaga-Shura's myrmidons in the sewers, digging a tunnel to the outside. It was nearly finished, as it seems. Would it be possible to use this for Saradush's inhabitants to escape?~
-@6    = ~How long will it take you to finish that protected tunnel? Make sure it won't be too late!~
-@7    = ~Oh, there is little hope. You see, with help of quite powerful mages, Yaga-Shura surrounded the city with a magical shield. No teleportation into or out of the city is possible.~
+@5    = ~I encountered Yaga-Shura's minions in the sewers, digging a tunnel to the outside. It was nearly finished, as it seems. Would it be possible to use this for Saradush's inhabitants to escape?~
+@6    = ~How long will it take you to finish that protected tunnel? You have to make sure that it won't be too late!~
+@7    = ~Oh, there is little hope. You see, with the help of quite powerful mages, Yaga-Shura surrounded the city with a magical shield. No teleportation into or out of the city is possible.~
 @8    = ~Yes, you mentioned that already. What about a tunnel leading outside?~
 @9    = ~What about a tunnel leading outside?~
 @10   = ~So, there is no hope at all?~
 @11   = ~Too bad. I have to go.~
-@12   = ~A tunnel is a tricky thing. It might enable the cities' inhabitants to leave, but on the same time it will be an opening to Yaga-Shura's army to invade. There has been many attempts to open one since the city has been encloused, for many different reasons.~
-@13   = ~Even supposing the tunnel would lead far away off to go past Yaga-Shura's army, I am not sure it would be save to be used to leave the city. The mighty barrier that madman erected might affect anyone leaving the city.~
+@12   = ~A tunnel is a tricky thing. It might enable the city's inhabitants to leave, but at the same time it could be an opening for Yaga-Shura's army to invade. There have been many attempts to open one since the city has been under seige, for various reasons.~
+@13   = ~Even if such a tunnel went far beyond Yaga-Shura's army, I am not sure it would be safe to use. The magical barrier that maniac erected might affect anyone leaving the city.~
 @14   = ~What barrier are you talking about?~
-@15   = ~Oh, there might be, if I would only know the magic behind the barrier. I do not think I am powerful enough to brake the barrier for a magical escape, but I am humbly assuming it would be possible for me to magically protect a tunnel leading outside, for anyone willing to flee the city. That of course would mean I need two things: specific information about the magic of the barrier, and a tunnel actually leading outside. Best if it's not all finished yet, to give me time to do my magic without any of Yaga-Shura's myrmidons noticing.~
+@15   = ~Oh, there might be, if I only knew the magic used to erect the barrier. Even then, I would not be powerful enough to make teleportation from the city safe, but there may be a small chance that, with this knowledge, I could protect a tunnel leading outside through which people could escape. That of course would mean I need two things: specific information about the magic of the barrier, and a tunnel actually leading outside. Best if it's not fully completed yet, to give me time to do my magic without any of Yaga-Shura's minions noticing.~
 @16   = ~Help people in Saradush escape
 
-Librarius said he propbably could protect a tunnel leading outside Saradush, if he had more information about the magical barrier sourrounding the city.~
-@17   = ~Yaga-Shura's mages erected a magical barrier, surrounding the city. It makes an escape by teleporting impossible.~
+Librarius said he propbably could protect a tunnel leading outside Saradush, if he had more information about the magical barrier surrounding the city.~
+@17   = ~Yaga-Shura's mages erected a magical barrier around the city. It makes an escape by teleporting impossible.~
 @18   = ~But that is all theory, as long as I don't have my spellbook back. If you intend to help the people here, I am afraid you would have to retrieve it first. I can do nothing without it.~
-@19   = ~Hm, if you say Yaga-Shura's helpers digged it, I assume it will lead directly to his location. But you said it's not finished yet. There is a good chance it could be prolonged underneath. Yes, that is helpful information!~
+@19   = ~Hm, if you say Yaga-Shura's followers dug it, I assume it will lead directly to his camp. But you said it's not finished yet. There is a good chance that the tunnel could simply be extended beyond his troops. Yes, this is helpful information!~
 @20   = ~Now all I need is information about that barrier.~
 @21   = ~I'll come back if I find anything.~
 @22   = ~I have to go.~
-@23   = ~That means I have all information I need. It is up to me now to do the magic. Please, go and spread the news in the town, so people know about this possibility. But please keep in mind it's only the normal people the tunnel will be safe for, not the Bhaal children, I am afraid. - This is exciting! I am at last able to do something.~
+@23   = ~That means I have all the information I need. It is up to me now to cast the magic. Please go and spread the news in the city so everyone knows! But remember: the tunnel will only be safe for normal people, not for Bhaal children. This is exciting! I am at last able to do something.~
 @24   = ~Help people in Saradush escape
 
-Librarius has all information he needs now to open a protected tunnel leading outside the city. Alas, this will only be possible for normal citizens. The magic against the Bhaalspawn is too powerful to be broken by our means. Now the last chance is to stop Yaga-Shura on time.~
+Librarius has all the information he needs now to open a protected tunnel leading out of the city. Alas, this will only be possible for normal citizens. The magic against the Bhaalspawn is too powerful to be broken by our means. Their only chance is to stop Yaga-Shura on time.~
 @25   = ~Really? This is brilliant! Let me see... Yes, this is indeed what I need. I need... yes, I have that, and... yes, that should work - oh!~
-@26   = ~Oh dear! This is heavy magic. There is a special magic going on to bind Bhaal children to the cities' grounds. Hm. No, I won't be able to open the barrier to anyone carrying Bhaal blood. But for the normal citizen, I will be able to open a protected exit.~
-@27   = ~Now all I need is an appropriate tunnel location.~
-@28   = ~I will, I am on it! It takes its time. I hurry, you can be assured of that!~
+@26   = ~Oh dear! It is extremely powerful. Special magic was cast to keep all Bhaal children in town. Hm. No, I won't be able to make the tunnel safe for Bhaal descendants. But I will be able to protect the tunnel for all normal residents.~
+@27   = ~Now all I need is a suitable place for the tunnel.~
+@28   = ~I will, I am on it! It takes its time. I'm hurrying, you can be assured of that!~
 @29   = ~Farewell!~
-@30   = ~The incredients for the protection spell are currently brewing. I have a spare minute right now.~
-@31   = ~I would need your help to inform the non-Bhaalspawn in Saradush that Librarius is preparing a protected tunnel that will lead outside the city. The protection will only work for normal people, I am afraid.~
-@32   = ~Why, this is great news! There are surely a few that would prefer fleeing rather than being trapped here. Thank you, <PRO_BROTHERSISTER>! I will spread the news.~
+@30   = ~The ingredients for the protection spell are currently brewing. I have a spare minute right now.~
+@31   = ~I will need your help to inform the non-Bhaalspawn in Saradush that Librarius is preparing a protected tunnel that will lead out of the city. The protection will only work for normal people, I am afraid.~
+@32   = ~Why, this is great news! There are surely many that would prefer fleeing rather than being trapped here. Thank you, <PRO_BROTHERSISTER>! I will spread the news.~
 @33   = ~Help people in Saradush escape~

@@ -1,14 +1,14 @@
 @0    = ~This component requires BGT or EET to work.~ 
 //Extended Lady Elgea plot
 @1001    = ~Lady Elgea's extended plot~
-/* @1002    = ~Two elaborately crafted pantaloons made of silver. These family pieces were used as ransom, paid by Welther for the release of Lady Elgea.~ */
+/* @1002    = ~A pair of elaborately crafted pantaloons made of silver. This family piece was used as ransom, paid by Welther for the release of Lady Elgea.~ */
 
 
 //Extended Anomen plot
 @3001  = ~Anomen's extended plot~
 @3002  = ~Whispering voice~
 @3003	 = ~Delryn's Family Necklace~
-@3004	 = ~This precious piece has been a prized possession of the Delryn family for many generations. Anomen's sister, Moira, wore this necklace as a token to remember her mother, as it was her last gift to her.
+@3004	 = ~This valuable piece of jewelry has been in the Delryn family for many generations. Anomen's sister Moira loved wearing this necklace as it was her mother's last gift to her.
 
 Protection From Life Drain
 2 x Sunfire daily
@@ -20,9 +20,9 @@ Can only be used by Anomen.~
 @3009	 = ~New assignment~
 @3010	 = ~Stanial and Ollik,
 
-Thanks to your "little error" at the Delryn estate I can no longer risk to have you there - but I can't just let you traipse around the city, either. There is no official witness, but I have to make sure no suspicion will point into my direction!
-It is only because of the services you provided that I am generous and provide for a place to stay - instead of letting you simply "disappear".
-I have come to an arrangement with Renal Bloodscalp, I have rented a house in the Bridge District from the Shadow Thieves, near the Temple of Helm. The rumors that the house is haunted should guarantee your safety while you lay low.
+Thanks to your "little debauchery" at the Delryn estate, I can no longer risk using you there as spies - nor let you just walk around the city. Even though there are officially no witnesses, I have to make sure that neither of you are associated with me!
+It is only because of the services that you have already shown me that I am so generous to get you a hiding place instead of simply "disappearing" you.
+Through my business relationships with Renal Bloodscalp and the shadow thieves, I've rented a house in the bridge district, opposite the Temple of Helm. The rumors that the place is haunted should offer you enough security until the dust has settled.
 
 As long as you adhere to the following rules, you will not have any problems:
 1. Do not leave the house, unless I give you instructions!
@@ -55,7 +55,7 @@ We found the assassins Stanial and Ollik in a tidy little hiding place. We have 
 Captain Alwesk will certainly be delighted. Two assassins neutralised and a nice reward for the information - what more could one want?~
 @3016		 = ~In pursuit of Moira's assassins
 
-The meeting with Captain Alwesk was very enlightening. He seems to be a capable man, consistent, confident and calculating. Despite his harsh tone of voice, he was ready to help out in looking for the assassins Stanial and Ollik. While he asks around in the Docks, we should look for the two soldiers the Captain is missing. The Captain says the two frequented the Delosar's Inn in the Bridge District, we should start there.
+The meeting with Captain Alwesk was very enlightening. He seems to be a capable man, consistent, confident and calculating. Despite his harsh tone of voice, he was ready to help look for the assassins Stanial and Ollik. While he asks around in the Docks, we should look for the two soldiers the Captain is missing. The Captain says the two frequented the Delosar's Inn in the Bridge District, we should start there.
 
 In the meantime, I hope his investigations will be successful ...~
 @3017		 = ~In pursuit of Moira's assassins
@@ -68,26 +68,26 @@ After some initial consideration the Captain allowed us to pursue the two assass
 Magistrate Bylanna was surprised with our latest findings, because the two in question apparently tried to enter a lawsuit against Lord Cor in front of the Magistrate. She advised us to talk to Captain Alwesk in the garrison at the Docks. She also asked Anomen not to take matters into his own hands and leave the arrest of Stanial and Ollik to the Captain.~
 @3019		 = ~In pursuit of Moira's assassins
 
-During our stay in Athkatla we were approached by a mysterious person. This person seemed to know who murdered Anomen's sister Moira! Contrary to findings of the Guard, the person claimed there was a witness of the murder, which can help us solve the case. To find the latter, we should talk to a barmaid at the Mithrest Inn. According to our unknown 'ally' she should be able to help us.~
+During our stay in Athkatla we were approached by a mysterious person. This person seemed to know who murdered Anomen's sister Moira! Contrary to the findings of the Guard, the person claimed there was a witness to the murder, which can help us solve the case. To find this witness, we should talk to a barmaid at the Mithrest Inn. According to our unknown 'ally' she should be able to help us.~
 @3020		 = ~In pursuit of Moira's assassins
 
-As it turns out, the mysterious witness was none other than the barmaid Rebecca, who once worked at Delryn's Estate and was a friend to Moira. She told us how she secretly paid Moira a visit, before they were surprised by two burglars. Rebecca was able to hide in time and watched as one of the two killed Moira. Willem was also killed. Fortunately, Rebecca recognised the two burglars: Stanial and Ollik, who used to work for Cor Delryn.
-Anomen recognized the names of the two as well, apparently angered warehouse workers under the service of his father. He has urged that we report to Magistrate Bylanna with our findings.~
+As it turns out, the mysterious witness was none other than the barmaid Rebecca, who once worked at Delryn's Estate and was a friend to Moira. She told us how she secretly paid Moira a visit, before they were surprised by two burglars. Rebecca was able to hide in time and watched as one of the two killed Moira. Willem was also killed. Fortunately, Rebecca overheard the villains' names before they fled the scene: Stanial and Ollik.
+Anomen recognized their names as disgruntled warehouse workers under the service of his father. He has urged that we report to Magistrate Bylanna with our findings.~
 @3021		  = ~In pursuit of Moira's assassins
 
-Captain Alwesk was very pleased to hear that everything went according to the plan.
-However, fate had prepared more surprises for us: a messenger told us that Anomen's Father, Lord Cor, decided to personally take revenge on the alleged assassins of his daughter. Anomen left very worried to the estate of Farradh.
-Captain Alwesk feared that the matter might turn bad, if I do not follow Anomen – a fear that I second. I will not let anything happen to Anomen and, if necessary, I will also protect him from himself, should it come to a confrontation with Saerk.~
+Captain Alwesk was very pleased to hear that everything went according to plan.
+However, fate had prepared more surprises for us: a messenger told us that Anomen's father, Lord Cor, decided to personally take revenge on the alleged assassins of his daughter. Worried, Anomen left for Farradh's estate.
+Captain Alwesk feared that the matter might turn bad if I do not follow Anomen – a fear that I share. I will not let anything happen to Anomen and, if necessary, I will also protect him from himself, should it come to a confrontation with Saerk.~
 @3022		  = ~In pursuit of Moira's assassins
 
 Captain Alwesk was very pleased to hear that everything went according to the plan.
-However, fate had prepared more surprises for us: a messenger told us that Anomen's Father, Lord Cor, decided to personally take revenge on the alleged assassins of his daughter. Anomen left very worried to the estate of Farradh.
-Captain Alwesk feared that the matter might turn bad, if I do not follow Anomen.
+However, fate had prepared more surprises for us: a messenger told us that Anomen's father, Lord Cor, decided to personally take revenge on the alleged assassins of his daughter. Worried, Anomen left for Farradh's estate.
+Captain Alwesk feared that the matter might turn bad if I do not follow Anomen.
 
 As for me, this matter is closed. If Anomen wants to help his foolish father, he can do it. Most likely, the consequences will be most unpleasant.~
 @3023		   = ~In pursuit of Moira's assassins
 
-We arrived at the estate of the merchant just in time to help Anomen stop his father from trying to kill Saerk. In a heated discussion, it turned out that none other that Surayah Farradh, Saerk's daughter, was our mysterious informant! She was friend to Moira despite the hostility between their two houses and helped us find Moira's murderers. However, she did not know that the two criminals were working for her father, and also nothing of Saerk's dealings with the Shadow Thieves!
+We arrived at the estate of the merchant just in time to help Anomen stop his father from trying to kill Saerk. In a heated discussion, it turned out that none other that Surayah Farradh, Saerk's daughter, was our mysterious informant! She was a friend to Moira despite the hostility between their two houses and helped us find Moira's murderers. However, she did not know that the two criminals were working for her father, and also nothing of Saerk's dealings with the Shadow Thieves!
 Before it could come to blows, Saerk, his son Yusef and Anomen's father were all arrested by the guard. It has taken long, but the case of Moira's murder has finally been laid to rest. I hope it will help Anomen find some peace.~
 @3024		    = ~Butler~
 @3025		    = ~Cook~
@@ -111,8 +111,8 @@ Before it could come to blows, Saerk, his son Yusef and Anomen's father were all
 //Silver Dagger in Irenicus Dungeon
 @7001   = ~Silver Dagger in Irenicus Dungeon~
 
-//Bards can spend the night at festival (Five Flagons)
-@8001   = ~Bards can spend the night at the festival (Five Flagons)~
+//Bards can spend the night at their stronghld (Five Flagons)
+@8001   = ~Bards can spend the night at their stronghold (Five Flagons)~
 
 
 //A bard for the bard stronghold
@@ -148,5 +148,5 @@ Thief~
 @120002   = ~This scroll gives information about the magical barrier that Yaga-Shura's mages put around Saradush. It seems to be some sort of instruction for the mages on how to keep it running. A person with the right knowledge should be able to use this information to overcome the barrier at least partly.~
 
 @120003   = ~Temple of Mask in Docks District~
-@120004   = ~The exit leads to a small balkony with a view to the Sea of Swords.~
+@120004   = ~The exit leads to a small balcony with a view of the Sea of Swords.~
 @120005   = ~Temple of Mask~
