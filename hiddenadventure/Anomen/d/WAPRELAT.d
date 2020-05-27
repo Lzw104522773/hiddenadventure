@@ -1,2 +1,2 @@
 ADD_TRANS_ACTION HPRELATE BEGIN 5 END BEGIN END
-~SetGlobalTimer("WAAnoKWisp","Global",FOURTEEN_DAYS)~
+~SetGlobalTimer("WAAnoKWisp","Global",TWO_DAYS)~
