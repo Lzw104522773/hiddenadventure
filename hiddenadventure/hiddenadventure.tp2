@@ -71,6 +71,10 @@ LANGUAGE ~English~
          ~english~
          ~hiddenadventure/tra/english/setup.tra~
 
+LANGUAGE ~Russian (by yota13)~
+         ~russian~
+         ~hiddenadventure/tra/russian/setup.tra~
+
 ////////////////////////////////////////////////
 //  ~Lady Elgea's extended plot~
 ///////////////////////////////////////////////
@@ -344,7 +348,6 @@ COPY ~hiddenadventure/anomen/itm/wabag06.itm~ ~override~
 
 ACTION_IF FILE_EXISTS_IN_GAME ~ANOPLAT.itm~ BEGIN
 
-/*
 	COPY_EXISTING ~ANOPLAT.itm~ ~override~
 		WRITE_BYTE 0x1e 227
 	BUT_ONLY
@@ -356,11 +359,9 @@ ACTION_IF FILE_EXISTS_IN_GAME ~ANOPLAT.itm~ BEGIN
 	COPY_EXISTING ~ANOHELM.itm~ ~override~
 		WRITE_BYTE 0x1e 227
 	BUT_ONLY
-*/
 	
 	EXTEND_BOTTOM ~ANOMEN.bcs~ ~hiddenadventure/anomen/cross/baf/waanom.baf~
-
-/*	
+	
 	COPY ~hiddenadventure/anomen/cross/spl/waanopla.spl~ ~override~
 	SAY 0x9e @3027
 	BUT_ONLY
@@ -372,7 +373,6 @@ ACTION_IF FILE_EXISTS_IN_GAME ~ANOPLAT.itm~ BEGIN
 	COPY ~hiddenadventure/anomen/cross/spl/waanoshl.spl~ ~override~
 	SAY 0x9e @3030
 	BUT_ONLY
-*/
 	
 	COPY ~hiddenadventure/anomen/cross/cre/wamess.cre~ ~override~
 	SAY NAME1 @3028
