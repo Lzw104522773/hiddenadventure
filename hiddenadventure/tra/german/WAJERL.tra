@@ -1,8 +1,12 @@
 @0    = ~Ich habe Euer Illithiumproblem gelöst. Eure Quelle sollte Euch bald wieder Nachschub liefern.~
-@1    = ~Das sind ja fantastische Neuigkeiten! Keine Ahnung, wie Ihr das geschafft habt, aber sobald ich neue Waren habe, stehen auch Euch meine Edelmetalle zur Verfügung! Und nun entschuldigt mich, ich muss alles für die neue lieferung vorbereiten!~
-@2    = ~Seid gegrüßt, <CHARNAME>. Dank Euch bin ich wieder im Geschäft! Wisst Ihr, normalerweise verkaufe ich mein Erz nicht an jeden, aber für Euch gibt es noch einen Rabatt obendrein!~
-@3    = ~Lebt wohl.~
-@4    = ~Dann lasst mich mal Euer Angebot sehen.~
-@5    = ~Ah, Ihr seid zurück, <CHARNAME>. Braucht ihr wieder Nachschub an gutem Erz?~
-@6    = ~Bis später, Jerlia.~
-@7    = ~Ja, zeigt mir, was ihr anzubieten habt.~
+//@1    = ~Das sind ja fantastische Neuigkeiten! Keine Ahnung, wie Ihr das geschafft habt, aber sobald ich neue Waren habe, stehen auch Euch meine Edelmetalle zur Verfügung! Und nun entschuldigt mich, ich muss alles für die neue lieferung vorbereiten!~
+//@2    = ~Seid gegrüßt, <CHARNAME>. Dank Euch bin ich wieder im Geschäft! Wisst Ihr, normalerweise verkaufe ich mein Erz nicht an jeden, aber für Euch gibt es noch einen Rabatt obendrein!~
+//@3    = ~Lebt wohl.~
+//@4    = ~Dann lasst mich mal Euer Angebot sehen.~
+//@5    = ~Ah, Ihr seid zurück, <CHARNAME>. Braucht Ihr wieder Nachschub an gutem Erz?~
+//@6    = ~Bis später, Jerlia.~
+//@7    = ~Ja, zeigt mir, was Ihr anzubieten habt.~
+
+/* new for vBeta6 */
+@8    = ~Das sind ja fantastische Neuigkeiten! Keine Ahnung, wie Ihr das geschafft habt. Dank Euch bin ich wieder im Geschäft! Wisst Ihr, normalerweise verkaufe ich mein Erz nicht an jeden, aber für Euch gibt es noch einen Rabatt obendrein!~
+@9    = ~Ich würde gerne Illithium kaufen.~

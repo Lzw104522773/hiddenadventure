@@ -4,30 +4,16 @@ ADD_TRANS_ACTION HABREGA BEGIN 23 END BEGIN END
 EXTEND_BOTTOM SCJERLIA 38
      IF ~Global("WAJerPS","Global",1)~ THEN REPLY @0 GOTO WAJERL01
 END
+
 EXTEND_BOTTOM SCJERLIA 37
      IF ~Global("WAJerPS","Global",1)~ THEN REPLY @0 GOTO WAJERL01
+     IF ~Global("WAJerPS","Global",2)~ THEN REPLY @9 DO ~StartStore("WAJERLIA",LastTalkedToBy())~ EXIT
 END
 
-ADD_TRANS_TRIGGER ~SCJERLIA~ 37 ~Global("WAJerPS","Global",0)~ DO 0
 
 APPEND SCJERLIA
 	IF ~~ THEN BEGIN WAJERL01
-		SAY @1
-		IF ~~ THEN DO ~SetGlobalTimer("WAJerlTime","Global",ONE_DAY)
-EscapeArea()~ EXIT
+		SAY @8
+		IF ~~ THEN DO ~SetGlobal("WAJerPS","Global",2)~ + 37
 	END
 END
-
-BEGIN WAJERLIA
-
-	IF ~NumTimesTalkedTo(0)~ THEN BEGIN 0
-		SAY @2
-		IF ~~ THEN REPLY @3 EXIT
-		IF ~~ THEN REPLY @4 DO ~StartStore("WAJERLIA",LastTalkedToBy())~ EXIT
-	END
-	
-	IF ~True()~ THEN BEGIN 1
-		SAY @5
-		IF ~~ THEN REPLY @6 EXIT
-		IF ~~ THEN REPLY @7 DO ~StartStore("WAJERLIA",LastTalkedToBy())~ EXIT
-	END

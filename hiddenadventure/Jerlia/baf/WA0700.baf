@@ -1,8 +1,0 @@
-IF
-	GlobalTimerExpired("WAJerlTime","GLOBAL")
-	Global("WASpawJerli","Global",0)
-THEN
-	RESPONSE #100
-		SetGlobal("WASpawJerli","Global",1)
-		CreateCreature("WAJERLIA",[736.2201],14) // Jerlia, die Erzhändlerin
-END
