@@ -440,7 +440,7 @@ COPY_EXISTING ~scjerlia.dlg~ ~override~
 BUT_ONLY IF_EXISTS
 
 ACTION_IF (NOT jerlia_trans_exists) BEGIN
-  COMPILE ~%MOD_FOLDER%/jerlia/scjerlia_bye_response.d~
+  COMPILE ~%MOD_FOLDER%/jerlia/d/scjerlia_bye_response.d~
 END
 
 COMPILE ~hiddenadventure/Jerlia/d/WAJERL.d~
