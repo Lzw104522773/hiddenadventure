@@ -1,0 +1,8 @@
+IF
+	Global("WAMoirQ","Global",10)
+	Name("sguard1",Myself)
+	AreaCheck("AR0504")
+THEN
+	RESPONSE #100
+		DestroySelf()
+END
