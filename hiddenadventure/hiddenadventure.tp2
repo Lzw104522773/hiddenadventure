@@ -3,7 +3,7 @@ BACKUP ~hiddenadventure/backup~
 SUPPORT ~Please post at G3 or Kerzenburgforum, refer to readme.~
 README ~hiddenadventure/hidden-adventure-%LANGUAGE%.html~
 ~hiddenadventure/hidden-adventure-english.html~
-VERSION ~Beta_7~ 
+VERSION ~Beta_8~ 
 
 AUTO_TRA ~hiddenadventure/tra/autotra/%s~
 
@@ -49,19 +49,20 @@ ACTION_IF !FILE_EXISTS ~hiddenadventure/reinstall.mrk~ BEGIN
 			iconv_path = ~hiddenadventure/tools/iconv~
 	END
 		
-		LOAD_TRA ~hiddenadventure/tra/autotra/%LANGUAGE%/setup.tra~
-		//LOAD_TRA ~hiddenadventure/tra/autotra/%LANGUAGE%/setup_ee.tra~
 		
 APPEND ~STATE.IDS~
 	~0x80101FEF CD_STATE_NOTVALID~
 UNLESS ~CD_STATE_NOTVALID~
 
 COPY ~hiddenadventure/component.xxx~ ~hiddenadventure/reinstall.mrk~
-
 END
 
-
+LOAD_TRA ~hiddenadventure/tra/autotra/%LANGUAGE%/setup.tra~
+ACTION_IF GAME_IS ~bg2ee eet~ BEGIN
+	LOAD_TRA ~hiddenadventure/tra/autotra/%LANGUAGE%/setup_ee.tra~
 END
+
+END //ALWAYS
 
 LANGUAGE ~German~
          ~German~

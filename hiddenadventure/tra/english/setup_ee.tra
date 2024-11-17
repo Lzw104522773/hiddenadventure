@@ -10,8 +10,14 @@ Weight: 1~
 
 STATISTICS:
 
-Protection From Life Drain
-2 x Sunfire daily
+Equipped abilities:
+– Wearer is immune to Life Drain
+
+Charge abilities:
+– Sunfire two times per day
+  Range: 0
+  Duration: Instant
+  Area of Effect: 15-ft. radius
 
 Weight: 1~
 
@@ -55,10 +61,11 @@ STATISTICS:
 
 Combat abilities:
 – 25% chance per hit that target must save vs. Death at -2 or die
-- If the target is a Mind Flayer or an Ulitharid, it is killed immediately.
+– If the target is a Mind Flayer or an Ulitharid, it is killed immediately.
 
-THAC0: +3
-Damage: 1d10+3 (slashing)
+THAC0: +3, +4 vs. lycanthropes
+Damage: 1d10+3, +4 vs. lycanthropes
+Damage type: Slashing
 Speed Factor: 10
 Proficiency Type: Two-handed Sword
 Type: Two-handed
