@@ -3,7 +3,7 @@ BACKUP ~hiddenadventure/backup~
 SUPPORT ~Please post at G3 or Kerzenburgforum, refer to readme.~
 README ~hiddenadventure/hidden-adventure-%LANGUAGE%.html~
 ~hiddenadventure/hidden-adventure-english.html~
-VERSION ~Beta_8~ 
+VERSION ~Beta_9~ 
 
 AUTO_TRA ~hiddenadventure/tra/autotra/%s~
 
@@ -79,6 +79,10 @@ LANGUAGE ~Russian (by yota13)~
 LANGUAGE ~Polish (by memory)~
          ~polish~
          ~hiddenadventure/tra/polish/setup.tra~
+
+LANGUAGE ~Spanish (by alaisFcZ)~
+         ~spanish~
+         ~hiddenadventure/tra/spanish/setup.tra~
 
 ////////////////////////////////////////////////
 //  ~Lady Elgea's extended plot~

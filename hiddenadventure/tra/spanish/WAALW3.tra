@@ -1,0 +1,20 @@
+@0    = ~Tú... has vuelto, por lo que veo. ¿Tuviste éxito en tu investigación?~
+@1    = ~No, aún estamos en ello.~
+@2    = ~En efecto, Capitán. Nos hemos ocupado de los asesinos y hemos encontrado este documento en uno de ellos. ¡Prueba que Saerk Farradh tenía tratos con los Ladrones de las Sombras!~
+@3    = ~¡Bien hecho! Es exactamente la prueba que necesitaba. Supongo que ahora podemos ir a charlar con el "Señor" Saerk. ¡Ja! ¡Toma, una recompensa que te has ganado honestamente!~
+@4    = ~Por fin podemos... ¡¿Qué pasa ahora?!~
+@5    = ~¡Señor Anomen! ¡Gracias a los dioses que te he encontrado!~
+@6    = ~¡Te conozco, fuiste tú quien me contó lo de la muerte de Moira! ¿Por qué me buscabas?~
+@7    = ~Tu padre... se encargó de irrumpir en la finca de Farradh. ¡Está loco! ¡Dijo que buscara venganza!~
+@8    = ~¡Oh dioses! ¡Eso no puede ser! ¡Saerk tiene muchos guardias! ¡Pues perdóname, <CHARNAME>, pero tengo que evitar que mi padre haga alguna estupidez!~
+@9    = ~¡Ese joven está a punto de cometer un gran error! ¡Date prisa, síguelo a la finca de Saerk y vigílalo! ¡Pienso que podría no estar a la altura de los problemas que le esperan allí!~
+@10   = ~¡No te preocupes, evitaré que Anomen haga algo de lo que se arrepienta!~
+@11   = ~Anomen no querrías que me entrometiera en sus asuntos familiares.~
+@12   = ~¿Y a mí qué me importa? Anomen tienes a los asesinos de tu hermana. Es culpa de tu padre si hace cosas estúpidas.~
+@13   = ~Yo no me guiaría por lo que él pudiera querer, sino por lo que es bueno para él, ¡y luchar contra un escuadrón de guardias de la finca, junto con un estupido borracho seguro que no lo es!~
+/* @14   */
+/* @15   */
+@16   = ~Esto ya no es un problema mío. El caso está resuelto, tengo la recompensa. Hice todo lo que pude. Adiós, Capitán.~
+@17   = ~¿No es así? ¿No te molesta que tu amigo se vea arrastrado a las locuras de tu padre? ¿Y si decides matar a Saerk? Tendrás que responder ante la magistrada... si sobrevive. Tendría que arrestarlo si hace alguna estupidez.~
+/* @18  */
+@19   = ~Me alegra oír esto. Esperemos que tu amigo no se vea arrastrado a las locuras de tu padre. Si decides matar a Saerk, tendría que responder ante la magistrada... si sobrevive. Tendría que arrestarlo si hace algo estúpido.~

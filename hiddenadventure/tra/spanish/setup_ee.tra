@@ -1,0 +1,68 @@
+/*
+@1002    = ~Un par de pantalones de plata elaboradamente trabajados. Esta pieza familiar se utilizó como rescate, pagado por Welther para la liberación de Dama Elgea.~
+
+ESTADÍSTICAS:
+
+Peso: 1~
+*/
+
+@3004	 = ~Esta valiosa joya ha sido patrimonio de la familia Delryn durante muchas generaciones. A Moira, la hermana de Anomen, le encantaba llevar este collar, ya que fue el último regalo que le hizo su madre.
+
+ESTADÍSTICAS:
+
+Protección contra la fuga de vida
+2 x Fuego Solar diario
+
+Peso: 1~
+
+@3010	 = ~Stanial y Ollik,
+
+Gracias a vuestro "pequeño libertinaje" en la finca de Delryn, ya no puedo arriesgarme a utilizaros allí como espías, ni dejaros pasear por la ciudad. Aunque oficialmente no haya testigos, ¡tengo que asegurarme de que ninguno de los dos se les relacione conmigo!
+Sólo por los servicios que ya me has prestado soy tan generoso como para conseguirte un escondite en lugar de que simplemente "desaparezcas".
+Gracias a mis relaciones comerciales con Renal Cabellorrojo y los ladrones de las sombras, he alquilado una casa en el distrito del puente, frente al Templo de Helm. Los rumores de que el lugar está embrujado deberían ofrecerte suficiente seguridad hasta que el polvo se haya asentado.
+
+Siempre que respetes las siguientes reglas, no tendrás ningún problema:
+1. ¡No salgas de casa antes de que te dé instrucciones!
+2. No cojas nada de lo que hay allí guardado: ¡los Ladrones de Sombras no toleran a los tontos!
+3. No entres, bajo ninguna circunstancia, en la cámara acorazada del sótano. Renal insistió mucho en que nadie tuviera acceso: ¡quien entre se arrepentirá!
+
+Si sigues estas sencillas reglas, estarás a salvo.
+
+Saerk Farradh
+
+ESTADÍSTICAS:
+
+Peso: 0~
+
+@3013	 = ~La mayoría de los garrotes son palos robustos de madera dura, estrechos en la empuñadura y más anchos en el extremo. Esta sencilla arma se ha utilizado desde que el hombre empezó a utilizar herramientas. Cualquiera puede encontrar un buen trozo de madera y blandirlo, de ahí su uso generalizado. Este palo en particular ha sido mejorado mágicamente.
+
+ESTADÍSTICAS:
+
+THAC0: +1
+Daño: 1d6+1 (aplastante)
+Factor de velocidad: 4
+Tipo de competencia: Garrote
+Type: Una mano
+Requiere
+ 5 Fuerza
+
+Peso: 3~
+
+@110002   = ~Esta espada vorpal de plata irradia un aura oscura cuando la examinas, y la hoja está tan finamente afilada que podría cortar una cabeza de un solo golpe.
+
+
+ESTADÍSTICAS:
+
+Habilidades de combate:
+- 25% de probabilidad por impacto de que el objetivo deba salvar vs. Muerte a -2 o morir.
+- Si el objetivo es un Azota mentes o un Ulitharid, muere inmediatamente.
+
+THAC0: +3
+Daño: 1d10+3 (cortante)
+Factor de Velocidad: 10
+Tipo de competencia: Espada a dos manos
+Tipo: Espada A dos manos
+Requiere
+ 14 Fuerza
+
+Peso: 15~

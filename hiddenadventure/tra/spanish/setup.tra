@@ -1,0 +1,152 @@
+@0    = ~Este componente requiere BGT o EET para funcionar.~ 
+//Extended Lady Elgea plot
+@1001    = ~Gesta ampliada de la Dama Elgea~
+/* @1002    = ~Un par de pantalones de plata elaboradamente trabajados. Esta pieza familiar se utilizó como rescate, pagados por Welther para la liberación de Dama Elgea.~ */
+
+
+//Extended Anomen plot
+@3001  = ~Gesta ampliada de Anomen~
+@3002  = ~Voz susurrante~
+@3003	 = ~Collar de la familia de Delryn~
+@3004	 = ~Esta valiosa joya ha pertenecido a la familia Delryn durante muchas generaciones. A Moira, la hermana de Anomen, le encantaba llevar este collar, ya que fue el último regalo que le hizo su madre.
+
+Protección contra el drenaje de vida
+2 x Fuego solar diario
+Sólo puede ser utilizado por Anomen.~
+@3005	 = ~Este collar sólo puede ser utilizado por Anomen.~
+@3006	 = ~Alwesk~
+@3007	 = ~Ollik~
+@3008	 = ~Stanial~
+@3009	 = ~Nueva gesta~
+@3010	 = ~Stanial y Ollik,
+
+Gracias a vuestro "pequeños actos de libertinaje" en la finca de Delryn, ya no puedo arriesgarme a utilizaros allí como espías, ni dejaros pasear por la ciudad. Aunque oficialmente no haya testigos, ¡tengo que asegurarme de que ninguno de los dos este asociado conmigo!
+Sólo por los servicios que ya me has prestado soy tan generoso como para conseguirte un escondite en lugar , en ves de hacer que simplemente "desaparezcas".
+Gracias a mis relaciones comerciales con Renal Cabellorrojo y los ladrones en las sombras, he alquilado una casa en el distrito del puente, frente al Templo de Helm. Los rumores de que el lugar está embrujado deberían ofrecerte suficiente seguridad hasta que todo el caos se haya calmado.
+
+Siempre que respetes las siguientes normas, no tendrás ningún problema:
+1. ¡No salgas de casa, a menos que te dé instrucciones!
+2. No cojas nada de lo que hay allí guardado: ¡a los Ladrones de las Sombras no les gusta que toquen sus cosas!
+3. No entres, bajo ninguna circunstancia, en la cámara acorazada del sótano. Renal se ha empeñado en que nadie tenga acceso: ¡quien entre se arrepentirá!
+
+Si sigues estas sencillas normas, estarás a salvo.
+
+Saerk Farradh~
+@3011	 = ~Matón a sueldo~
+@3012	 = ~Garrote +1~
+@3013	 = ~La mayoría de los garrotes son palos robustos de madera dura, estrechos en la empuñadura y más anchos en el extremo. Esta sencilla arma se ha utilizado desde que la humanidad empezó a utilizar herramientas. Cualquiera puede encontrar un buen trozo de madera y blandirlo; de ahí su uso generalizado.
+
+ESTADÍSTICAS:
+
+THAC0: -1
+Daño 1D6 +1 (aplastante)
+Peso: 3
+Factor de velocidad: 4
+Tipo de competencia: Garrote
+Tipo: Garrote 1 mano
+Requiere 5 Fuerza
+No utilizable por:
+ Mago~
+@3014		 = ~Teniente Jaiken~
+@3015		 = ~En persecución de los asesinos de Moira
+
+Encontramos a los asesinos Stanial y Ollik en un escondite. Hemos contactado con el Capitán. Hay una nota dentro del bolsillo de Stanial que prueba que Saerk Farradh tiene tratos con los Ladrones de las Sombras.
+
+El capitán Alwesk estará encantado. Dos asesinos eliminados y una buena recompensa por la información, ¿qué más puedo pedir?~
+@3016		 = ~En persecución de los asesinos de Moira
+
+La conversación con el capitán Alwesk fue muy esclarecedora. Parece un hombre capaz, coherente, seguro y calculador. A pesar de su duro tono de voz, se mostró dispuesto a ayudar a buscar a los asesinos Stanial y Ollik. Mientras él pregunta por los muelles, nosotros deberíamos buscar a los dos soldados que le faltan al capitán. El Capitán dice que los dos frecuentaban la Posada de Delosar en el Distrito del Puente, deberíamos empezar por ahí.
+
+Mientras tanto, espero que sus investigaciones tengan éxito ...~
+@3017		 = ~En persecución de los asesinos de Moira
+
+El capitán Alwesk ha descubierto dónde se escondían los asesinos Stanial y Ollik. Se trata de una casa en el Distrito del Puente, situada frente al Templo de Helm. Según el Capitán, el edificio pertenecía a los Ladrones de las Sombras, que fue vendido a Saerk Farradh, ¡el rival de Cor Delryn!
+
+Después de algunas consideraciones iniciales, el capitán nos permitió perseguir a los dos asesinos y también nos ofreció una recompensa si encontrábamos pruebas que sugirieran una conexión entre Saerk y los Ladrones de las Sombras.~
+@3018		 = ~En persecución de los asesinos de Moira
+
+La Magistrada Bylanna se sorprendió con nuestros últimos hallazgos, porque los dos en cuestión aparentemente intentaron entablar una acusacion en contra del Señor Cor delante de la Magistrada. Nos aconsejó que habláramos con el capitán Alwesk en la guarnición de los muelles. También pidió a Anomen que no se tomara la justicia por sus propias manos y dejara el arresto de Stanial y Ollik en manos del capitán.~
+@3019		 = ~In pursuit of Moira's assassins
+
+Durante nuestra estancia en Athkatla se nos acercó una persona misteriosa. Esta persona parecía saber quién había asesinado a Moira, la hermana de Anomen. Contrariamente a las conclusiones de la Guardia, la persona afirmó que había un testigo del asesinato, que puede ayudarnos a resolver el caso. Para encontrar a este testigo, debemos hablar con una camarera en la posada Mitocio. Según nuestra "aliada" desconocida, esto debería poder ayudarnos.~
+@3020		 = ~En persecución de los asesinos de Moira
+
+Resulta que la misteriosa testigo no era otra que la camarera Rebecca, que una vez trabajó en la Propiedad de Delryn y era amiga de Moira. Nos contó cómo le hizo una visita a Moira en secreto, antes de que fueran sorprendidas por los dos ladrones. Rebecca pudo esconderse a tiempo y vio cómo uno de los dos mataba a Moira. También mataron a Willem. Afortunadamente, Rebecca oyó los nombres de los villanos antes de que huyeran del lugar: Stanial y Ollik.
+Anomen reconoció sus nombres como trabajadores de almacén descontentos al servicio de su padre. Ha instado a que informemos a la magistrada Bylanna de nuestros hallazgos.~
+@3021		  = ~En persecución de los asesinos de Moira
+
+El capitán Alwesk se alegró mucho al saber que todo había ido según lo previsto.
+Sin embargo, el destino nos tenía preparadas más sorpresas: un mensajero nos comunicó que el padre de Anomen, el señor Cor, había decidido vengarse personalmente de los supuestos asesinos de su hija. Preocupado, Anomen partió hacia la finca de los Farradh.
+El capitán Alwesk temía que el asunto se torciera si yo no seguía a Anomen, un temor que tambien comparto. No dejaré que le ocurra nada a Anomen y, si es necesario, también lo protegeré de sí mismo, en caso de que se produzca un enfrentamiento con Saerk.~
+@3022		  = ~En persecución de los asesinos de Moira
+
+El capitán Alwesk se alegró mucho al saber que todo había ido según lo previsto.
+Sin embargo, el destino nos tenía preparadas más sorpresas: un mensajero nos comunicó que el padre de Anomen, el señor Cor, había decidido vengarse personalmente de los supuestos asesinos de su hija. Preocupado, Anomen partió hacia la finca de los Farradh.
+El capitán Alwesk temía que el asunto se pusiera feo si no seguía a Anomen.
+
+En cuanto a mí, este asunto está cerrado. Si Anomen quiere ayudar a su tonto padre, puede hacerlo. Lo más probable es que las consecuencias serán muy desagradables.~
+@3023		   = ~En persecución de los asesinos de Moira
+
+Llegamos a la finca del mercader justo a tiempo para ayudar a Anomen a impedir que su padre intentara matar a Saerk. En una acalorada discusión, resultó que nada menos que Surayah Farradh, la hija de Saerk, ¡era nuestra misteriosa informadora! Era amiga de Moira a pesar de la hostilidad entre sus dos casas y nos ayudó a encontrar a los asesinos de Moira. Sin embargo, no sabía que los dos criminales trabajaban para su padre, ¡y tampoco sabía nada de los tratos de Saerk con los Ladrones de las Sombras!
+Antes de llegar a las manos, Saerk, su hijo Yusef y el padre de Anomen fueron detenidos por la guardia. Ha llevado mucho tiempo, pero el caso del asesinato de Moira por fin se ha cerrado. Espero que ayude a Anomen a encontrar algo de paz.~
+@3024		    = ~Mayordomo~
+@3025		    = ~Cocinero~
+@3026		    = ~Depósito de mercancías Farradh~
+@3027		    = ~Esta armadura sólo puede ser utilizada por Anomen.~
+@3028		    = ~Mensajero del Consejo~
+@3029		    = ~Este yelmo sólo puede ser utilizado por Anomen.~
+@3030		    = ~Este escudo sólo puede ser utilizado por Anomen.~
+@3031		 = ~En persecución de los asesinos de Moira~
+
+
+//Tienda de minerales de Jerlia
+@4001    = ~Tienda de minerales de Jerlia~
+
+//Elven holy water in the Temple of Lathander
+@5001   = ~Agua bendita élfica en el Templo de Lathander~
+
+//Cuchilla Ondulada en Tesorería
+@6001   = ~Cuchilla Ondulada en Tesorería~
+
+//Daga de plata en la Mazmorra
+@7001   = ~Daga de plata en la Mazmorra de Irenicus~
+
+//Los bardos pueden pasar la noche en su fortaleza (Cinco Jarras)
+@8001   = ~Los bardos pueden pasar la noche en su fortaleza (Cinco Jarras)~
+
+
+//Un bardo para la fortaleza de los bardos
+@100001   = ~Un bardo para la fortaleza de los bardos~
+
+//Espada de plata
+@110001   = ~Espada de plata~
+@110002   = ~Espada de plata
+Esta espada vorpal de plata irradia un aura oscura cuando la examinas, y la hoja está tan finamente afilada que podría cortar una cabeza de un solo golpe.
+
+ESTADÍSTICAS:
+
+Habilidades especiales:
+25% de probabilidad por impacto de que el objetivo deba salvar vs. Muerte a -2 o morir.
+Si el objetivo es un Azotamentes o un Ulitharid, muere inmediatamente.
+
+THAC0: -3, (-4 vs. licántropos)
+Daño: 1d10 +3 (arma blanca), (1d10 +4 vs. licántropos)
+Peso: 15
+Factor de velocidad: 10
+Tipo de competencia: Espada a dos manos
+Tipo: 2 manos
+No utilizable por:
+Druida
+Clérigo
+Mago
+Ladrón~
+
+//~Túnel de Saradush~
+
+@120000   = ~Túnel de Saradush~
+@120001   = ~Pergamino de información~
+@120002   = ~Este pergamino da información sobre la barrera mágica que los magos de Yaga-Shura pusieron alrededor de Saradush. Parece ser una especie de instrucción para los magos sobre cómo mantenerla en funcionamiento. Una persona con los conocimientos adecuados debería ser capaz de utilizar esta información para superar la barrera al menos en parte.~
+
+@120003   = ~Templo de Máscara en el distrito del puente~
+@120004   = ~La salida conduce a un pequeño balcón con vistas al Mar de Espadas.~
+@120005   = ~Templo de Máscara~
