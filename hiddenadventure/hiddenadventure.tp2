@@ -37,7 +37,7 @@ ACTION_IF !FILE_EXISTS ~hiddenadventure/reinstall.mrk~ BEGIN
 	LAF autotra_workaround END
 
 	ACTION_DEFINE_ARRAY tra#reload BEGIN setup END
-	ACTION_DEFINE_ARRAY tra#noconvert BEGIN END
+	ACTION_DEFINE_ARRAY tra#noconvert BEGIN setup END
 
 	LAF HANDLE_CHARSETS
 		INT_VAR
@@ -83,6 +83,10 @@ LANGUAGE ~Polish (by memory)~
 LANGUAGE ~Spanish (by alaisFcZ)~
          ~spanish~
          ~hiddenadventure/tra/spanish/setup.tra~
+
+LANGUAGE ~Simplified Chinese(by lzw104522773)~
+         ~schinese~
+         ~hiddenadventure/tra/schinese/setup.tra~
 
 ////////////////////////////////////////////////
 //  ~Lady Elgea's extended plot~
@@ -636,8 +640,8 @@ COPY_EXISTING ~AR0300.are~ ~override~
     fj_type         = 2    //travel
     fj_box_left     = 959  //kleinstes x
     fj_box_top      = 1333  //kleinstes y
-    fj_box_right    = 1005  //größtes x
-    fj_box_bottom   = 1428   //größtes y
+    fj_box_right    = 1005  //gr  tes x
+    fj_box_bottom   = 1428   //gr  tes y
     fj_cursor_idx   = 30   //door
     fj_vertex_0     = 982 + (1428 << 16)   
     fj_vertex_1     = 959 + (1420 << 16)   
